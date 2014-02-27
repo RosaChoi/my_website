@@ -47,3 +47,6 @@ $('#contact').click(contactClicked);
 		var targetY = $('.contact-page').offset().top;
 		$('body').animate({scrollTop: targetY}, 900);
 	}
+
+
+
