@@ -27,6 +27,7 @@ p {
 	line-height: 2;
 	max-width: 700px;
 	padding-bottom: 80px;
+	padding-top: 30px;
 	font-size: 18px;	
 }
 /*Site Page One*/
@@ -34,7 +35,6 @@ p {
 	background: url(../img/landingpage.jpg) center top no-repeat;
 	height: 859px;
 	background-size: cover;
-	/*margin-bottom: 6em;*/
 	position: relative;
 }
 .top-nav {
@@ -106,14 +106,32 @@ h1.slogan {
 .work-sixtysix {
 	background-color: white;
 	width: 100%;
-	height: 900px;
+	/*height: 1000px;*/
 }
 h2 {
 	font-size: 4em;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: lighter;
-	margin: 100px 0 60px 0;
+	padding: 100px 0 10px 0;
+}
+h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 12px;
+	padding: 70px 0 10px 0;
+}
+.objective
+{
+	width: 100px;
+	margin: 0 auto;
+}
+.work-sixtysix .entry-content .objective {
+	border-bottom: 1px solid #333;
+}
+.objective h3 {
+	margin-bottom: 30px;
 }
 .painting4 {
 	width: 800px;
@@ -121,6 +139,9 @@ h2 {
 }
 .painting4 img {
 	margin-bottom: 80px;
+}
+.buttons {
+	padding-bottom: 100px;
 }
 .view-button {
 	margin: 0 auto;
@@ -139,7 +160,8 @@ h2 {
 /* Site Page Three*/
 .work-unlikeness{
 	background: url(../img/Unlikeness.jpg) center top no-repeat;
-	height: 1200px;
+	width: 100%;
+	/*height: 1250px;*/
 	background-size: cover;
 }
 .work-unlikeness .entry-content h2 {
@@ -148,6 +170,12 @@ h2 {
 }
 .work-unlikeness .entry-content p {
 	color: #d7ddb9;
+}
+.work-unlikeness .entry-content .objective h3 {
+	color: #d7ddb9;
+}
+.work-unlikeness .entry-content .objective {
+	border-bottom: 1px solid #d7ddb9;
 }
 .cover-image {
 	width: 400px;
@@ -159,10 +187,33 @@ h2 {
 .work-unlikeness .buttons a.view-button {
 	background: #9e3d1e;
 }
+
+
+/* toggle - page three
+.view-toggle {
+	max-width: 700px;
+	margin: 0 auto;
+
+}
+.view-toggle .client h3 {
+	color: #d7ddb9;
+	text-align: center;
+	margin: 0;
+}
+.view-toggle .client {
+	width: 100px;
+	height: 40px;
+	border-bottom: 1px solid #d7ddb9;
+}
+.view-toggle p {
+	color: #d7ddb9;
+	text-align: left;
+}*/
 /* Site Page Four*/
 .work-timelocket{
 	background: url(../img/page004.jpg) center top no-repeat;
-	height: 1200px;
+	width: 100%;
+	/*height: 1300px;*/
 	background-size: cover;
 }
 .work-timelocket .entry-content h2 {
@@ -170,6 +221,13 @@ h2 {
 	margin-top: 0;
 	padding-top: 100px;
 }
+.work-timelocket .entry-content .objective h3 {
+	color: #6f2808;
+}
+.work-timelocket .entry-content .objective {
+	border-bottom: 1px solid #6f2808;
+}
+
 .work-timelocket .entry-content p {
 	color: #6f2808;
 }
@@ -178,7 +236,7 @@ h2 {
 	margin: 0 auto;
 }
 .jacket-image img {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 .work-timelocket .buttons a.view-button {
 	background: #6f2808;
@@ -189,6 +247,7 @@ h2 {
 }
 .steps {
 	background: white;
+	width: 100%;
 	height: 1000px;
 }
 .process-step {
@@ -200,15 +259,12 @@ h2 {
 .process-step:last-child {
 	box-shadow: none;
 }
-.work-process .buttons a {
-	background: #d11f07;
-	margin-bottom: 100px;
-}
 /* Site Page Six - My Story*/
 .my-story{
 	background: url(../img/bigR.jpg) center top no-repeat;
-	height: 1143px;
+	/*height: 1143px;*/
 	background-size: cover;
+	width: 100%;
 }
 .my-story .entry-content h2 {
 	margin-top: 0;
@@ -243,7 +299,61 @@ h2 {
 	position: absolute;
 	left: 520px;
 	top: 120px;
+	position: relative;
 }
+/*.social-toggle {
+	display: none;
+}*/
+#email, #twitter, #github, #linkedin, #toggle-email, #toggle-twitter, #toggle-github, #toggle-linkedin {
+	width: 60px;
+	height: 60px;
+}
+
+#email {
+	position: absolute;
+	top: 450px;
+	left: 700px;
+}
+#twitter {
+	position: absolute;
+	top: 450px;
+	left: 760px;
+}
+#github {
+	position: absolute;
+	top: 450px;
+	left: 820px;
+}
+#linkedin {
+	position: absolute;
+	top: 450px;
+	left: 880px;	
+}
+#toggle-email {
+	position: absolute;
+	top: 450px;
+	left: 700px;
+	display: none;
+}
+#toggle-twitter {
+	position: absolute;
+	top: 550px;
+	left: 760px;
+	display: none;
+}
+#toggle-github {
+	position: absolute;
+	top: 550px;
+	left: 820px;
+	display: none;
+}
+#toggle-linkedin {
+	position: absolute;
+	top: 550px;
+	left: 880px;
+	display: none;
+}
+
 /*footer*/
 .footer-nav nav{
 	height: 60px;
