@@ -301,9 +301,9 @@ h3 {
 	top: 120px;
 	position: relative;
 }
-/*.social-toggle {
-	display: none;
-}*/
+.social-toggle {
+	position: relative;
+}
 #email, #twitter, #github, #linkedin, #toggle-email, #toggle-twitter, #toggle-github, #toggle-linkedin {
 	width: 60px;
 	height: 60px;
@@ -331,25 +331,25 @@ h3 {
 }
 #toggle-email {
 	position: absolute;
-	top: 450px;
+	top: 510px;
 	left: 700px;
 	display: none;
 }
 #toggle-twitter {
 	position: absolute;
-	top: 550px;
+	top: 510px;
 	left: 760px;
 	display: none;
 }
 #toggle-github {
 	position: absolute;
-	top: 550px;
+	top: 510px;
 	left: 820px;
 	display: none;
 }
 #toggle-linkedin {
 	position: absolute;
-	top: 550px;
+	top: 510px;
 	left: 880px;
 	display: none;
 }
