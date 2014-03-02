@@ -31,7 +31,7 @@ p {
 	font-size: 18px;	
 }
 /*Site Page One*/
-.landing-page {
+.landing-page-container {
 	background: url(../img/landingpage.jpg) center top no-repeat;
 	height: 859px;
 	background-size: cover;
@@ -52,7 +52,7 @@ p {
 	height: 18px;
 	left: 2.5em;
 }
-.landing-page .slogan {
+.landing-page-container .slogan {
 	font-size: 2.7em;
 	position: absolute;
 	top: 540px;
@@ -103,7 +103,7 @@ h1.slogan {
 	color: #f9c87a;
 }
 /* Site Page Two*/
-.work-sixtysix {
+.work-sixtysix-container {
 	background-color: white;
 	width: 100%;
 	/*height: 1000px;*/
@@ -127,7 +127,7 @@ h3 {
 	width: 100px;
 	margin: 0 auto;
 }
-.work-sixtysix .entry-content .objective {
+.work-sixtysix-container .entry-content .objective {
 	border-bottom: 1px solid #333;
 }
 .objective h3 {
@@ -158,23 +158,23 @@ h3 {
 	width: 8em;
 }
 /* Site Page Three*/
-.work-unlikeness{
+.work-unlikeness-container{
 	background: url(../img/Unlikeness.jpg) center top no-repeat;
 	width: 100%;
 	/*height: 1250px;*/
 	background-size: cover;
 }
-.work-unlikeness .entry-content h2 {
+.work-unlikeness-container .entry-content h2 {
 	color: #d7ddb9;
 	padding-top: 100px;
 }
-.work-unlikeness .entry-content p {
+.work-unlikeness-container .entry-content p {
 	color: #d7ddb9;
 }
-.work-unlikeness .entry-content .objective h3 {
+.work-unlikeness-container .entry-content .objective h3 {
 	color: #d7ddb9;
 }
-.work-unlikeness .entry-content .objective {
+.work-unlikeness-container .entry-content .objective {
 	border-bottom: 1px solid #d7ddb9;
 }
 .cover-image {
@@ -184,51 +184,106 @@ h3 {
 .cover-image img {
 	margin-bottom: 80px;
 }
-.work-unlikeness .buttons a.view-button {
+.work-unlikeness-container .buttons a.view-button {
 	background: #9e3d1e;
 }
-
-
-/* toggle - page three
+/* toggle - page three*/
 .view-toggle {
-	max-width: 700px;
+	max-width: 100%;
 	margin: 0 auto;
-
+	position:relative;
+	display: none;
 }
 .view-toggle .client h3 {
 	color: #d7ddb9;
 	text-align: center;
 	margin: 0;
-}
-.view-toggle .client {
+	padding: 0;
 	width: 100px;
 	height: 40px;
 	border-bottom: 1px solid #d7ddb9;
 }
-.view-toggle p {
+.client {
+	width: 700px;
+	margin: 0 auto;
+	padding:3em;
+}
+.client p {
 	color: #d7ddb9;
 	text-align: left;
-}*/
+	padding-bottom: 20px;
+}
+.client a {
+	color: #d7ddb9;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.client a:hover {
+	color: #852c04;
+}
+.view-toggle .the-final {
+	width: 100%;
+	background: #852c04;
+
+}
+.the-final img {
+	width: 1000px;
+	padding: 80px 140px;
+}
+.the-final h3 {
+	padding-top: 30px;
+	color: #d7ddb9;
+}
+.feedback {
+	width: 100%;
+	background: #e9e9e9;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.feedback p {
+	font-size: 28px;
+	text-align: left;
+	line-height: 2;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	font-family: 'MuseoSansRegular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+img.profile {
+	margin-left: 850px;
+}
+.author p{
+	font-size: 14px;
+	text-align: right;
+	padding: 0 0 30px 0;
+	margin-top: 20px;
+}
+.close-mark {
+	color: rgba(0,0,0,.5);
+	font-size: 40px;
+	float: right;
+	padding-right: 625px;
+
+}
 /* Site Page Four*/
-.work-timelocket{
+.work-timelocket-container{
 	background: url(../img/page004.jpg) center top no-repeat;
 	width: 100%;
 	/*height: 1300px;*/
 	background-size: cover;
 }
-.work-timelocket .entry-content h2 {
+.work-timelocket-container .entry-content h2 {
 	color: #6f2808;
 	margin-top: 0;
 	padding-top: 100px;
 }
-.work-timelocket .entry-content .objective h3 {
+.work-timelocket-container .entry-content .objective h3 {
 	color: #6f2808;
 }
-.work-timelocket .entry-content .objective {
+.work-timelocket-container .entry-content .objective {
 	border-bottom: 1px solid #6f2808;
 }
-
-.work-timelocket .entry-content p {
+.work-timelocket-container .entry-content p {
 	color: #6f2808;
 }
 .jacket-image {
@@ -238,10 +293,13 @@ h3 {
 .jacket-image img {
 	margin-bottom: 50px;
 }
-.work-timelocket .buttons a.view-button {
+.work-timelocket-container .buttons a.view-button {
 	background: #6f2808;
 }
 /* Site Page Five - My Work Process*/
+.work-process-container {
+	background: white;
+}
 .process-step p {
 	text-align: left;
 }
@@ -259,37 +317,76 @@ h3 {
 .process-step:last-child {
 	box-shadow: none;
 }
+.work-timelocket-container .view-toggle .client h3,
+.work-timelocket-container .view-toggle .client p,
+.work-timelocket-container .view-toggle .client a {
+	color: #6f2808;
+}
+.work-timelocket-container .view-toggle .the-final {
+	background: black;
+}
+.work-timelocket-container .view-toggle .the-final img {
+	width: 600px;
+	padding: 80px 341px;
+}
+.work-timelocket-container .view-toggle .feedback {
+	background: white;
+}
+.work-timelocket-container .view-toggle .feedback img.profile {
+	margin-left: 900px;
+}
 /* Site Page Six - My Story*/
-.my-story{
+.my-story-container{
 	background: url(../img/bigR.jpg) center top no-repeat;
 	/*height: 1143px;*/
 	background-size: cover;
 	width: 100%;
 }
-.my-story .entry-content h2 {
+.my-story-container .entry-content h2 {
 	margin-top: 0;
 	padding-top: 100px;
 	color: #988a78;
 	text-shadow: 1px 1px 2px #fff;
 }
-.my-story .entry-content p {
+.my-story-container .entry-content p {
 	color: #7e7364;
 	text-shadow: 1px 1px 2px #fff;
 }
-.my-story .buttons a {
+.my-story-container .buttons a {
 	background: #b42b3d;
 }
-/*Site Page Seven - Contact*/
-.contact-page {
+/*Site Page Seven - Quote*/
+.quote-container {
+	width: 100%;
+	background: #333;
+}
+.quote-container p {
+	color: #dddddb;
+	font-size: 28px;
+	line-height: 2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-style: italic;
+	/*font-family: "ff-tisa-web-pro",serif;*/
+}
+.quote-container p.goethe {
+	font-size: 14px;
+	font-style: normal;
+	padding-bottom: 40px;
+	font-family: 'MuseoSansRegular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+/*Site Page Eight - Contact*/
+.contact-page-container {
 	background: url(../img/contactRosa.jpg) center top no-repeat;
 	height: 857px;
 	background-size: cover;
 	position: relative
 }
-.contact-page .greeting h2 {
+.contact-page-container .greeting h2 {
 	color: #333;
 	margin-top: 0;
-	padding-top: 100px;
+	padding-top: 60px;
 }
 .greeting{
 	background: rgba(255,255,255,.5);
@@ -301,59 +398,68 @@ h3 {
 	top: 120px;
 	position: relative;
 }
+.greeting p {
+	width: 450px;
+}
 .social-toggle {
 	position: relative;
 }
-#email, #twitter, #github, #linkedin, #toggle-email, #toggle-twitter, #toggle-github, #toggle-linkedin {
+#email, #twitter, #github, #linkedin {
 	width: 60px;
 	height: 60px;
 }
-
-#email {
+.gray-email {
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	top: 450px;
 	left: 700px;
 }
-#twitter {
+.gray-twitter {
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	top: 450px;
 	left: 760px;
 }
-#github {
+.gray-github {
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	top: 450px;
 	left: 820px;
 }
-#linkedin {
+.gray-linkedin {
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	top: 450px;
 	left: 880px;	
 }
-#toggle-email {
+#email {
 	position: absolute;
 	top: 510px;
 	left: 700px;
 	display: none;
 }
-#toggle-twitter {
+#twitter {
 	position: absolute;
 	top: 510px;
 	left: 760px;
 	display: none;
 }
-#toggle-github {
+#github {
 	position: absolute;
 	top: 510px;
 	left: 820px;
 	display: none;
 }
-#toggle-linkedin {
+#linkedin {
 	position: absolute;
 	top: 510px;
 	left: 880px;
 	display: none;
 }
-
 /*footer*/
 .footer-nav nav{
 	height: 60px;

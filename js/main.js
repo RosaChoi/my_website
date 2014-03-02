@@ -8,13 +8,14 @@ $(document).ready(function () {
     });
 });
 
+
 var FAST_SCROLL = 600
 
 //snap to Sixty-six Days from top nav menu//
 $('#sixtysix').click(sixtysixClicked);
 	function sixtysixClicked() {
 	console.log('sixtysixClicked')
-	var targetY = $('.work-sixtysix').offset().top;
+	var targetY = $('.work-sixtysix-container').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }
 
@@ -22,7 +23,7 @@ $('#sixtysix').click(sixtysixClicked);
 $('#unlikeness').click(unlikenessClicked);
 function unlikenessClicked() {
 	console.log('unlikenessClicked')
-	var targetY = $('.work-unlikeness').offset().top;
+	var targetY = $('.work-unlikeness-container').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }	
 
@@ -30,7 +31,7 @@ function unlikenessClicked() {
 $('#locket').click(locketClicked);
 function locketClicked() {
 	console.log('locketClicked')
-	var targetY = $('.work-timelocket').offset().top;
+	var targetY = $('.work-timelocket-container').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }
 
@@ -38,7 +39,7 @@ function locketClicked() {
 $('#mystory').click(myStoryClicked);
 function myStoryClicked() {
 	console.log('myStoryClicked')
-	var targetY = $('.my-story').offset().top;
+	var targetY = $('.my-story-container').offset().top;
 	$('body').animate({scrollTop: targetY}, 900);
 }
 
@@ -46,50 +47,84 @@ function myStoryClicked() {
 $('#contact').click(contactClicked);
 function contactClicked() {
 	console.log('contactClicked')
-	var targetY = $('.contact-page').offset().top;
+	var targetY = $('.contact-page-container').offset().top;
 	$('body').animate({scrollTop: targetY}, 900);
 }
 
+//when view-button is clicked, content page will slidedown and slide up
 $('.view-button').click(viewButtonClicked);
 function viewButtonClicked () {
-	event.preventDefault()
-	$(this).closest('div').prev('div').slideDown()
+	event. preventDefault();
+	console.log('viewButtonClicked');
+	var $viewButtonClicked = $(this);
+	$('.view-toggle').slideDown('fast');
+	$('.view-button').hide();
 }
 
-//social icon toggle - Gmail
-$('#email').mouseenter(function(){	
-	$('#toggle-email').animate({top:'+=450px'}, 400);
-	$('#toggle-email').show();
+$('.view-toggle').click(elseWhereClicked);
+function elseWhereClicked () {
+	event. preventDefault();
+	$('.view-toggle').slideUp('fast');
+	$('.view-button').show();
+}
+
+
+
+
+
+
+
+//$('.view-button').click(viewButtonClicked);
+//function viewButtonClicked () {
+//	event.preventDefault()
+//	console.log('viewButtonClicked');
+//	$(this).closest('.container').find('.view-toggle').slideDown();
+//}
+
+//social icon toggle - Gmail, twitter, github,linkedin
+$('.social-icons img').mouseenter(function() {
+	var targetId = $(this).data('target-id')
+	$(targetId).animate({top:'+=450px'}, 500).show();
 });
-$('#toggle-email').mouseleave(function(){
-	$('#toggle-email').hide();
-	$('#toggle-email').animate({top:'+=510'},200);
+$('.toggle-soc img').mouseleave(function(){
+	$(this).hide().animate({top:'+=510'},400);
 });
+
+
+// $('#email').mouseenter(function(){	
+// 	debugger
+// 	// $('#toggle-email').animate({top:'+=450px'}, 500);
+// 	// $('#toggle-email').show();
+// });
+//$('#toggle-email').mouseleave(function(){
+//	$('#toggle-email').hide();
+//	$('#toggle-email').animate({top:'+=510'},400);
+//});
 //social icon toggle - Twitter
-$('#twitter').mouseenter(function() {
-	$('#toggle-twitter').animate({top:'+=450px'}, 400);
-	$('#toggle-twitter').show();
-});
-$('#toggle-twitter').mouseleave(function(){
-	$('#toggle-twitter').hide();
-	$('#toggle-twitter').animate({top:'+=510'},200);
-});
+//$('#twitter').mouseenter(function() {
+//	$('#toggle-twitter').animate({top:'+=450px'}, 500);
+//	$('#toggle-twitter').show();
+//});
+//$('#toggle-twitter').mouseleave(function(){
+//	$('#toggle-twitter').hide();
+//	$('#toggle-twitter').animate({top:'+=510'},400);
+//});
 //social icon toggle - Github
-$('#github').mouseenter(function() {
-	$('#toggle-github').animate({top:'+=450px'}, 400);
-	$('#toggle-github').show();
-});
-$('#toggle-github').mouseleave(function(){
-	$('#toggle-github').hide();
-	$('#toggle-github').animate({top:'+=510'},200);
-});
+//$('#github').mouseenter(function() {
+//	$('#toggle-github').animate({top:'+=450px'}, 500);
+//	$('#toggle-github').show();
+//});
+//$('#toggle-github').mouseleave(function(){
+//	$('#toggle-github').hide();
+//	$('#toggle-github').animate({top:'+=510'},400);
+//});
 //social icon toggle - LinkedIn
-$('#linkedin').mouseenter(function() {
-	$('#toggle-linkedin').animate({top:'+=450px'}, 400);
-	$('#toggle-linkedin').show();
-});
-$('#toggle-linkedin').mouseleave(function(){
-	$('#toggle-linkedin').hide();
-	$('#toggle-linkedin').animate({top:'+=510'},200);
-});
+//$('#linkedin').mouseenter(function() {
+//	$('#toggle-linkedin').animate({top:'+=450px'}, 500);
+//	$('#toggle-linkedin').show();
+//});
+//$('#toggle-linkedin').mouseleave(function(){
+//	$('#toggle-linkedin').hide();
+//	$('#toggle-linkedin').animate({top:'+=510'},400);
+//});
 
