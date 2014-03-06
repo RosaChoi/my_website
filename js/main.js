@@ -8,7 +8,23 @@ $(document).ready(function () {
     });
 });
 
+//ScrollTop - decided not to do it
 
+//$('body').scroll(function() {
+//	if ($(this).scrollTop() > 100) {
+//		$('.scrollup').fadeIn();
+//	} else {
+//		$('.scrollup').fadeOut();
+//	}
+//});
+
+//$('.scrollup').click(function(){
+//	$('body').animate({scrollTop: 0} 900);
+//	return false;
+//});
+
+
+//Snap to each pages
 var FAST_SCROLL = 600
 
 //snap to Sixty-six Days from top nav menu//
@@ -61,18 +77,12 @@ function viewButtonClicked () {
 	$('.view-button').hide();
 }
 
-$('.view-toggle').click(elseWhereClicked);
+$('.feedback').click(elseWhereClicked);
 function elseWhereClicked () {
 	event. preventDefault();
 	$('.view-toggle').slideUp('fast');
 	$('.view-button').show();
 }
-
-
-
-
-
-
 
 //$('.view-button').click(viewButtonClicked);
 //function viewButtonClicked () {
@@ -127,4 +137,5 @@ $('.toggle-soc img').mouseleave(function(){
 //	$('#toggle-linkedin').hide();
 //	$('#toggle-linkedin').animate({top:'+=510'},400);
 //});
+
 

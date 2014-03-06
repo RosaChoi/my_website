@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+	<!--<a class="scrollup" href="#"><img src="img/logo-icon.png"></a>-->
 	<div class="landing-page-container">
 		<h1 class="slogan">Some Brave Dreams</h1>
 		<nav class="top-nav">
@@ -39,6 +40,63 @@
 		<div class="painting4">
 			<img src="img/LeftAllAlone.jpg">
 		</div>
+		<!-- this div will open up when the view more button is clciked --> 
+		<div class="view-toggle">
+			<div class="client">
+				<h3>the client</h3>
+				<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				<a href="http://www.capitaland.com/">CapitaLand</a>
+				<h3>the artist</h3>
+				<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+				<a href="http://www.artistbymistake.com">Wasel Choi</a>
+			</div>
+			<div class="the-final">
+				<h3>The Final</h3>
+				<nav class="slide-trigger">
+					<a class="slide-trigger1" href="#"><i class="fa fa-circle-o"></i></a>
+					<a class="slide-trigger2" href="#"><i class="fa fa-circle-o"></i></a>
+					<a class="slide-trigger3" href="#"><i class="fa fa-circle-o"></i></a>
+					<a class="slide-trigger4" href="#"><i class="fa fa-circle-o"></i></a>
+					<a class="slide-trigger5" href="#"><i class="fa fa-circle-o"></i></a>
+				</nav>
+				<div class="paintings-slide">
+					<div class="first-baby">
+						<img class="paint1a" src="img/painting01.jpg">
+						<img class="paint1b" src="img/painting01b.jpg">
+					</div>
+					<div class="green-tea">
+						<img class="paint2a" src="img/painting02a.jpg">
+						<img class="paint2b" src="img/painting02b.jpg">
+					</div>
+					<div class="handmethenight">
+						<img class="paint3b" src="img/painting03b.jpg">
+						<img class="paint3d" src="img/painting03d.jpg">
+					</div>
+					<div class="leftallalone">
+						<img class="paint4a" src="img/LeftAllAlone.jpg">
+						<img class="paint4b" src="img/painting04b.jpg">
+					</div>
+					<div class="soul-returned">
+						<img class="paint5a" src="img/painting05a.jpg">
+						<img class="paint5b" src="img/painting05b.jpg">
+					</div>
+				</div>
+				<h4>First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</h4>	
+			</div>
+			<div class="feedback">
+				<p class="client-feedback">“Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.”</p>
+				<img class="profile" src="img/steve.png">
+				<div class="author">
+					<p>Steve Qwek Ming Way<br>Architect</p>
+				</div>
+				<p class="client-feedback">“Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.”</p>
+				<img class="profile" src="img/artistwasel.png">
+				<div class="author">
+					<p>Wasel Choi<br>Artist</p>
+				</div>
+				<a class="close-mark" href="#"><i class="fa fa-chevron-circle-up"></i></a>
+			</div>
+		</div>	
 		<div class="buttons">
 			<a class="view-button" href="#">view work</a>
 		</div>
@@ -121,21 +179,43 @@
 			<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		</div>
 		<div class="process-diagram">
-			<!-- insert diagrm img -->
+			<img src="img/process-steps.png">
 		</div>
-		<div class="steps">
-				<section class="process-step">
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas seper.</p>
-				</section>
-				<section class="process-step">
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas seper.</p>
-				</section>
-				<section class="process-step">
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas seper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-				</section>
-				<section class="process-step">
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-				</section>
+		<div class="steps-one">
+			<section class="process-step">
+				<h4><i id="empathize" class="fa fa-users"></i>Empathize</h4>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="goals" class="fa fa-bullseye"></i>Define Goals</h4>
+				<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas seper.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="ideate" class="fa fa-lightbulb-o"></i>Ideate</h4>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="wireframe" class="fa fa-sitemap"></i>Planning & Wireframe</h4>
+				<p>PVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+			</section>
+		</div>
+		<div class="steps-two">
+			<section class="process-step">
+				<h4><i id="concept" class="fa fa-pencil-square-o"></i>Concept Design</h4>
+				<p>PVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="implement" class="fa fa-cogs"></i>Implementation</h4>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="feedb" class="fa fa-comment"></i>Feedback</h4>
+				<p>PVestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+			</section>
+			<section class="process-step">
+				<h4><i id="eval" class="fa fa-signal"></i>Evaluate & Improve</h4>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</section>			
 		</div>	
 	</div>
 	<div class="my-story-container">

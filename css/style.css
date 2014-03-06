@@ -30,10 +30,19 @@ p {
 	padding-top: 30px;
 	font-size: 18px;	
 }
+/*.scrollup {
+	width: 25px;
+	height: 29px;
+	position: fixed;
+	bottom: 10px;
+	right: 35px;
+	z-index: 1;
+}*/
+
 /*Site Page One*/
 .landing-page-container {
 	background: url(../img/landingpage.jpg) center top no-repeat;
-	height: 859px;
+	height: 850px;
 	background-size: cover;
 	position: relative;
 }
@@ -102,6 +111,7 @@ h1.slogan {
 .slidedown nav ul li a:hover {
 	color: #f9c87a;
 }
+
 /* Site Page Two*/
 .work-sixtysix-container {
 	background-color: white;
@@ -131,7 +141,7 @@ h3 {
 	border-bottom: 1px solid #333;
 }
 .objective h3 {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .painting4 {
 	width: 800px;
@@ -157,6 +167,88 @@ h3 {
 	border-radius: 5px;
 	width: 8em;
 }
+/* toggle - page two*/
+.view-toggle {
+	position: relative;
+}
+.work-sixtysix-container .view-toggle .the-final {
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	background: white;
+	padding: 0;
+	position: relative;
+}
+.work-sixtysix-container .view-toggle .client h3,
+.work-sixtysix-container .view-toggle .client p,
+.work-sixtysix-container .view-toggle .client a {
+	color: #333;
+}
+.work-sixtysix-container .view-toggle .client h3{
+	border-bottom: 1px solid #333;
+	margin-top: 20px;
+	padding-top: 40px;
+}
+.work-sixtysix-container .view-toggle .client a {
+	padding-bottom: 60px;
+}
+.work-sixtysix-container .view-toggle .client a:hover {
+	color: #00b495;
+}
+.paintings-slide {
+	position: relative;
+	width: 100%;
+	height: 1300px;
+	overflow: hidden;
+}
+.first-baby, .green-tea, .handmethenight, .leftallalone, .soul-returned {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 80px 240px;
+}
+.paint1b, .paint2b, .paint3d, .paint4b, .paint5b {
+	margin-top: 100px;
+}
+img.paint1b {
+	padding-left: 150px;
+}
+.green-tea, .handmethenight, .leftallalone, .soul-returned {
+	display: none;
+}
+nav.slide-trigger  {
+	height: 50px;
+	background: white;
+}
+.slide-trigger a {
+	color: #aaaaaa;
+	padding-left: 20px;
+	position: relative;
+	left: 544px;
+	top: 30px;
+	font-weight: lighter;
+	font-size: 14px;
+}
+.slide-trigger a:hover {
+	color: #00b495;
+}
+h4 {
+	font-family: 'MuseoSansRegular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 12px;
+	text-align: center;
+	font-weight: lighter;
+	font-style: italic;
+	color: #333;
+	padding: 60px 0;
+}
+.work-sixtysix-container .view-toggle .the-final h3 {
+	color: #00b495;
+}
+.work-sixtysix-container .view-toggle .feedback {
+	background: #e3e3e3;
+}
+
 /* Site Page Three*/
 .work-unlikeness-container{
 	background: url(../img/Unlikeness.jpg) center top no-repeat;
@@ -224,9 +316,8 @@ h3 {
 .view-toggle .the-final {
 	width: 100%;
 	background: #852c04;
-
 }
-.the-final img {
+.work-unlikeness-container .the-final img {
 	width: 1000px;
 	padding: 80px 140px;
 }
@@ -263,8 +354,8 @@ img.profile {
 	font-size: 40px;
 	float: right;
 	padding-right: 625px;
-
 }
+
 /* Site Page Four*/
 .work-timelocket-container{
 	background: url(../img/page004.jpg) center top no-repeat;
@@ -296,31 +387,17 @@ img.profile {
 .work-timelocket-container .buttons a.view-button {
 	background: #6f2808;
 }
-/* Site Page Five - My Work Process*/
-.work-process-container {
-	background: white;
-}
-.process-step p {
-	text-align: left;
-}
-.steps {
-	background: white;
-	width: 100%;
-	height: 1000px;
-}
-.process-step {
-	float: left;
-	width: 19%;
-	padding: 2% 3%;
-	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
-}
-.process-step:last-child {
-	box-shadow: none;
-}
+/* toggle - page four*/
 .work-timelocket-container .view-toggle .client h3,
 .work-timelocket-container .view-toggle .client p,
 .work-timelocket-container .view-toggle .client a {
 	color: #6f2808;
+}
+.work-timelocket-container .view-toggle .client a:hover {
+	color: #333;
+}
+.work-timelocket-container .view-toggle .client h3 {
+	border-bottom: 1px solid #6f2808;
 }
 .work-timelocket-container .view-toggle .the-final {
 	background: black;
@@ -334,6 +411,72 @@ img.profile {
 }
 .work-timelocket-container .view-toggle .feedback img.profile {
 	margin-left: 900px;
+}
+
+/* Site Page Five - My Work Process*/
+.work-process-container {
+	background: white;
+}
+.process-diagram {
+	width:100%;
+}
+.process-diagram img {
+	width: 500px;
+	padding-left: 390px;
+	padding-bottom: 50px;
+}
+.process-step p {
+	text-align: left;
+	font-size: 14px;
+}
+.steps-one, .steps-two{
+	background: white;
+	width: 1000px;
+	height: 340px;
+	padding-left: 150px;
+}
+.process-step {
+	float: left;
+	width: 180px;
+	height: 240px;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+.process-step:last-child {
+	box-shadow: none;
+}
+.process-step h4 {
+	text-align: left;
+	font-size: 14px;
+	padding:10px 0 20px 0;
+}
+.process-step h4 i {
+	font-size: 24px;
+	padding-right: 10px;
+}
+#empathize {
+	color: #f59522;
+}
+#goals {
+	color:#ED4037;
+}
+#ideate {
+	color: #8FC542;
+}
+#wireframe {
+	color: #AD3394;
+}
+#concept {
+	color: #5A5B5B;
+}
+#implement {
+	color: #38ACE3;
+}
+#feedb {
+	color: #B5B5B5;
+}
+#eval {
+	color: #F9DE0E;
 }
 /* Site Page Six - My Story*/
 .my-story-container{
@@ -355,6 +498,7 @@ img.profile {
 .my-story-container .buttons a {
 	background: #b42b3d;
 }
+
 /*Site Page Seven - Quote*/
 .quote-container {
 	width: 100%;
@@ -376,6 +520,7 @@ img.profile {
 	font-family: 'MuseoSansRegular', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
+
 /*Site Page Eight - Contact*/
 .contact-page-container {
 	background: url(../img/contactRosa.jpg) center top no-repeat;
@@ -460,6 +605,7 @@ img.profile {
 	left: 880px;
 	display: none;
 }
+
 /*footer*/
 .footer-nav nav{
 	height: 60px;
@@ -472,7 +618,7 @@ img.profile {
 	float: right;
 	font-size: 12px;
 	color: #333;
-	padding-right: 15px;
+	padding-right: 60px;
 }
 .footer-nav nav ul li a {
 	text-decoration: none;
