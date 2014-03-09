@@ -70,11 +70,13 @@ function contactClicked() {
 //when view-button is clicked, content page will slidedown and slide up
 $('.view-button').click(viewButtonClicked);
 function viewButtonClicked () {
-	event. preventDefault();
-	console.log('viewButtonClicked');
-	var $viewButtonClicked = $(this);
-	$('.view-toggle').slideDown('fast');
-	$('.view-button').hide();
+	event.preventDefault();
+	console.log('viewButtonClicked this:' + $(this).data('target-id'));
+	var targetId = $(this).data('target-id');
+	$(this).hide();  //Hide the button that was just clicked
+	$('.view-toggle').slideUp('fast');  //Slide all the other .view-toggles up
+	$(targetId).slideDown('fast');  //Slide the current target id down.
+	$('#first-dot').trigger('click')
 }
 
 $('.feedback').click(elseWhereClicked);
@@ -82,14 +84,23 @@ function elseWhereClicked () {
 	event. preventDefault();
 	$('.view-toggle').slideUp('fast');
 	$('.view-button').show();
+	var targetId = $('.view-button').data('target-id');
+	var targetY = $(targetId).offset().top;
+	$('body').animate({scrollTop: targetY}, 700);
 }
 
-//$('.view-button').click(viewButtonClicked);
-//function viewButtonClicked () {
-//	event.preventDefault()
-//	console.log('viewButtonClicked');
-//	$(this).closest('.container').find('.view-toggle').slideDown();
-//}
+//painting carousel
+$('.slide-trigger a').click(slideTriggerClicked);
+function slideTriggerClicked(evt) {
+	evt.preventDefault();
+	var targetSrcA = $(this).data('target-src-a');
+	var targetSrcB = $(this).data('target-src-b');
+	console.log(targetSrcA);
+	console.log(targetSrcB);
+	$("#paintings-slide-a").attr('src', targetSrcA);
+	$("#paintings-slide-b").attr('src', targetSrcB);
+}
+
 
 //social icon toggle - Gmail, twitter, github,linkedin
 $('.social-icons img').mouseenter(function() {

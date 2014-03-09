@@ -41,7 +41,7 @@
 			<img src="img/LeftAllAlone.jpg">
 		</div>
 		<!-- this div will open up when the view more button is clciked --> 
-		<div class="view-toggle">
+		<div id="paintSixtySix" class="view-toggle">
 			<div class="client">
 				<h3>the client</h3>
 				<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
@@ -53,35 +53,17 @@
 			<div class="the-final">
 				<h3>The Final</h3>
 				<nav class="slide-trigger">
-					<a class="slide-trigger1" href="#"><i class="fa fa-circle-o"></i></a>
-					<a class="slide-trigger2" href="#"><i class="fa fa-circle-o"></i></a>
-					<a class="slide-trigger3" href="#"><i class="fa fa-circle-o"></i></a>
-					<a class="slide-trigger4" href="#"><i class="fa fa-circle-o"></i></a>
-					<a class="slide-trigger5" href="#"><i class="fa fa-circle-o"></i></a>
+					<a id="first-dot" data-target-src-a="img/painting01.jpg" data-target-src-b="img/painting01b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
+					<a data-target-src-a="img/painting02a.jpg" data-target-src-b="img/painting02b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
+					<a data-target-src-a="img/painting03b.jpg" data-target-src-b="img/painting03d.jpg" href="#"><i class="fa fa-circle-o"></i></a>
+					<a data-target-src-a="img/LeftAllAlone.jpg" data-target-src-b="img/painting04b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
+					<a data-target-src-a="img/painting05a.jpg" data-target-src-b="img/painting05b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
 				</nav>
 				<div class="paintings-slide">
-					<div class="first-baby">
-						<img class="paint1a" src="img/painting01.jpg">
-						<img class="paint1b" src="img/painting01b.jpg">
-					</div>
-					<div class="green-tea">
-						<img class="paint2a" src="img/painting02a.jpg">
-						<img class="paint2b" src="img/painting02b.jpg">
-					</div>
-					<div class="handmethenight">
-						<img class="paint3b" src="img/painting03b.jpg">
-						<img class="paint3d" src="img/painting03d.jpg">
-					</div>
-					<div class="leftallalone">
-						<img class="paint4a" src="img/LeftAllAlone.jpg">
-						<img class="paint4b" src="img/painting04b.jpg">
-					</div>
-					<div class="soul-returned">
-						<img class="paint5a" src="img/painting05a.jpg">
-						<img class="paint5b" src="img/painting05b.jpg">
-					</div>
+					<img id="paintings-slide-a">
+					<img id="paintings-slide-b">
 				</div>
-				<h4>First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</h4>	
+				<h4>First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</h4>
 			</div>
 			<div class="feedback">
 				<p class="client-feedback">“Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.”</p>
@@ -98,7 +80,7 @@
 			</div>
 		</div>	
 		<div class="buttons">
-			<a class="view-button" href="#">view work</a>
+			<a class="view-button" href="#" data-target-id="#paintSixtySix">view work</a>
 		</div>
 	</div>
 	<div class="work-unlikeness-container">
@@ -113,7 +95,7 @@
 			<img src="img/TheLandOfUnlikeness.jpg">
 		</div>
 		<!-- this div will open up when the view more button is clciked --> 
-		<div class="view-toggle">
+		<div id="theLandOfUnLikeness" class="view-toggle">
 			<div class="client">
 				<h3>the client</h3>
 				<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
@@ -134,7 +116,7 @@
 			</div>
 		</div>	
 		<div class="buttons">
-			<a class="view-button" href="#">view work</a>
+			<a class="view-button" href="#" data-target-id="#theLandOfUnLikeness">view work</a>
 		</div>	
 	</div>
 	<div class="work-timelocket-container">
@@ -149,7 +131,7 @@
 			<img src="img/TheTimeLocket_Cover.jpg">
 		</div>
 		<!-- this div will open up when the view more button is clciked --> 
-		<div class="view-toggle">
+		<div id="theTimeLocket"class="view-toggle">
 			<div class="client">
 				<h3>the client</h3>
 				<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
@@ -170,7 +152,7 @@
 			</div>
 		</div>
 		<div class="buttons">
-			<a class="view-button" href="#">view work</a>
+			<a class="view-button" href="#" data-target-id="#theTimeLocket">view work</a>
 		</div>	
 	</div>
 	<div class="work-process-container">
@@ -179,7 +161,7 @@
 			<p class="project-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		</div>
 		<div class="process-diagram">
-			<img src="img/process-steps.png">
+			<img src="img/process-s.png">
 		</div>
 		<div class="steps-one">
 			<section class="process-step">
@@ -236,6 +218,13 @@
 		<div class="greeting">
 			<h2><a name="contact-me">Get in Touch</a></h2>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			<div class="credit" data-target-id="site-credit">
+				<p>Web Design & Development | Rosa Choi <br>
+				Photography | Wasel Choi<br>
+				Content Editing | Elizabeth Jourdin</p>
+
+				<img src="img/credit01.jpg">
+			</div>
 		</div>
 		<div class="social-icons">
 			<img class="gray-email" src="img/mailg.jpg" data-target-id="#email">
@@ -260,7 +249,7 @@
 			</nav>
 		</div>
 	</div>
-</body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+</body>
 </html>
