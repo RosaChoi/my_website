@@ -21,15 +21,15 @@
 		</nav>
 		<div class="slidedown">
 			<nav>
-				<ul>
-					<li id="sixtysix"><a href="#">Sixty-Six Days</a></li>
-					<li id="unlikeness"><a href="#">The Land of Unlikeness</a></li>
-					<li id="locket"><a href="#">The Time Locket</a></li>
+				<ul class="work-selection">
+					<li id="sixtysix"><a data-target-id="sixtysixContainer" href="#">Sixty-Six Days</a></li>
+					<li id="unlikeness"><a data-target-id="unlikenessContainer"href="#">The Land of Unlikeness</a></li>
+					<li id="locket"><a data-target-id="locketContainer" href="#">The Time Locket</a></li>
 				</ul>
 			</nav>
 		</div>	
 	</div>
-	<div class="work-sixtysix-container">
+	<div id="sixtysixContainer" class="work-sixtysix-container">
 		<div class="entry-content">
 			<h2 class="entry-title">Sixty-six Days</h2>
 			<div class="objective">
@@ -59,11 +59,19 @@
 					<a data-target-src-a="img/LeftAllAlone.jpg" data-target-src-b="img/painting04b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
 					<a data-target-src-a="img/painting05a.jpg" data-target-src-b="img/painting05b.jpg" href="#"><i class="fa fa-circle-o"></i></a>
 				</nav>
+				<!--<ul data-target-src-c="painting-titles">
+					<li class="painting1-title">First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</li>
+					<li class="painting2-title">Green Tea  |  Oil on Wood  |  15'75" x 7'87" x 33"</li>
+					<li class="painting3-title">Hand Me The Night, I Hand You The Light  |  Oil on Wood  |  15'75" x 7'87" x 33"</li>
+					<li class="painting4-title">Left All Alone |  Oil on Wood  |  15'75" x 7'87" x 33"</li>
+					<li class="painting5-title">Rad-det El Rooh  |  Oil on Wood  |  15'75" x 7'87" x 33"</li>
+				</ul>-->
 				<div class="paintings-slide">
 					<img id="paintings-slide-a">
 					<img id="paintings-slide-b">
+					<div id="paintings-slide-c"></div>
 				</div>
-				<h4>First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</h4>
+				<!--<div id="painting-title">First Baby  |  Oil on Wood  |  15'75" x 7'87" x 33"</div>-->
 			</div>
 			<div class="feedback">
 				<p class="client-feedback">“Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.”</p>
@@ -83,7 +91,7 @@
 			<a class="view-button" href="#" data-target-id="#paintSixtySix">view work</a>
 		</div>
 	</div>
-	<div class="work-unlikeness-container">
+	<div id="unlikenessContainer" class="work-unlikeness-container">
 		<div class="entry-content">
 			<h2 class="entry-title">The Land of Unlikeness</h2>
 			<div class="objective">
@@ -119,7 +127,7 @@
 			<a class="view-button" href="#" data-target-id="#theLandOfUnLikeness">view work</a>
 		</div>	
 	</div>
-	<div class="work-timelocket-container">
+	<div id="locketContainer" class="work-timelocket-container">
 		<div class="entry-content">
 			<h2 class="entry-title">The Time Locket</h2>
 			<div class="objective">
@@ -218,13 +226,17 @@
 		<div class="greeting">
 			<h2><a name="contact-me">Get in Touch</a></h2>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-			<div class="credit" data-target-id="site-credit">
-				<p>Web Design & Development | Rosa Choi <br>
+			<p class="credit-list">Web Design & Hand-Coding | Rosa Choi <br>
 				Photography | Wasel Choi<br>
-				Content Editing | Elizabeth Jourdin</p>
-
-				<img src="img/credit01.jpg">
-			</div>
+				Content Editing | Elizabeth Jourdin<br><br>
+				<span>A Special Thanks To</span><br>
+				Husband Wasel who has taught me to live my life to the full<br>
+				Natasha Murashev who has inspired me to learn how to code<br>
+				Sam Samskie who has generosly gave in to become my mentor<br>
+				Justin Steffin who has taught me how to code first time ever<br>
+				And all the opensource communities - Github, Fontawesome, Stackoverflow, MDN, etc. <br>
+				<a class="return" href="#"><i class="fa fa-heart"></i></a>
+			</p>
 		</div>
 		<div class="social-icons">
 			<img class="gray-email" src="img/mailg.jpg" data-target-id="#email">
@@ -232,7 +244,7 @@
 			<img class="gray-github" src="img/githubg.jpg" data-target-id="#github">
 			<img class="gray-linkedin" src="img/linkedin-g.jpg" data-target-id="#linkedin">	
 		</div>
-		<div class="toggle-soc"
+		<div class="toggle-soc">
 			<a href="mailto:rosa@waselrosa.com"><img id="email" src="img/mailr.jpg"></a>
 			<a href="https://twitter.com/RosaCodie"><img id="twitter" src="img/twitterb.jpg"></a>
 			<a href="https://github.com/waselrosa"><img id="github" src="img/githubb.jpg"></a>
@@ -244,7 +256,7 @@
 			<nav>
 				<ul>
 					<li id="copy-right">© 2014 WASELROSA | <a class="site-credit" href="#">Site Credit</a></li>
-					<li class="home"><a href="waselrosa.html">home</a></li>
+					<li class="home"><a href="#">home</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -1,31 +1,33 @@
 //top nav toggle
-$(document).ready(function () {
-    $('.dropdown-work').on('mouseover', function () {
-        $('.slidedown').slideToggle('300');
-    });
-    $('.dropdown-work').off('mouseover', function () {
-        $('.slidedown').slideToggle('200');
-    });
+$('.dropdown-work').mouseenter(function(){
+	$('.slidedown').slideToggle('300');
+});
+$('.dropdown-work').mouseleave(function(){
+	$('.slidedown').slideToggle('200');
 });
 
-//ScrollTop - decided not to do it
 
-//$('body').scroll(function() {
-//	if ($(this).scrollTop() > 100) {
-//		$('.scrollup').fadeIn();
-//	} else {
-//		$('.scrollup').fadeOut();
-//	}
-//});
-
-//$('.scrollup').click(function(){
-//	$('body').animate({scrollTop: 0} 900);
-//	return false;
-//});
+//ScrollTop - home
+$('.home').click(homeClicked);
+function homeClicked() {
+	event.preventDefault();
+	console.log(homeClicked);
+	$('body').animate({scrollTop: 0}, 900);
+	return false;
+};
 
 
 //Snap to each pages
 var FAST_SCROLL = 600
+
+//$('.work-selection li').click(slideDownWorkClicked);
+//function slideDownWorkClicked() {
+//	event.preventDefault();
+//	console.log('slideDownWorkClicked');
+//	var targetId = $(this).data('target-id');
+//	var targetY = $(targetId).offset().top;
+//	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+//}
 
 //snap to Sixty-six Days from top nav menu//
 $('#sixtysix').click(sixtysixClicked);
@@ -37,7 +39,7 @@ $('#sixtysix').click(sixtysixClicked);
 
 //snap to The Land of Unlikeness from top nav menu//
 $('#unlikeness').click(unlikenessClicked);
-function unlikenessClicked() {
+	function unlikenessClicked() {
 	console.log('unlikenessClicked')
 	var targetY = $('.work-unlikeness-container').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
@@ -45,7 +47,7 @@ function unlikenessClicked() {
 
 //snap to The Time Locket from top nav menu//
 $('#locket').click(locketClicked);
-function locketClicked() {
+	function locketClicked() {
 	console.log('locketClicked')
 	var targetY = $('.work-timelocket-container').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
@@ -86,7 +88,7 @@ function elseWhereClicked () {
 	$('.view-button').show();
 	var targetId = $('.view-button').data('target-id');
 	var targetY = $(targetId).offset().top;
-	$('body').animate({scrollTop: targetY}, 700);
+	$('body').animate({scrollTop: targetY}, 900);
 }
 
 //painting carousel
@@ -111,42 +113,20 @@ $('.toggle-soc img').mouseleave(function(){
 	$(this).hide().animate({top:'+=510'},400);
 });
 
-
-// $('#email').mouseenter(function(){	
-// 	debugger
-// 	// $('#toggle-email').animate({top:'+=450px'}, 500);
-// 	// $('#toggle-email').show();
-// });
-//$('#toggle-email').mouseleave(function(){
-//	$('#toggle-email').hide();
-//	$('#toggle-email').animate({top:'+=510'},400);
-//});
-//social icon toggle - Twitter
-//$('#twitter').mouseenter(function() {
-//	$('#toggle-twitter').animate({top:'+=450px'}, 500);
-//	$('#toggle-twitter').show();
-//});
-//$('#toggle-twitter').mouseleave(function(){
-//	$('#toggle-twitter').hide();
-//	$('#toggle-twitter').animate({top:'+=510'},400);
-//});
-//social icon toggle - Github
-//$('#github').mouseenter(function() {
-//	$('#toggle-github').animate({top:'+=450px'}, 500);
-//	$('#toggle-github').show();
-//});
-//$('#toggle-github').mouseleave(function(){
-//	$('#toggle-github').hide();
-//	$('#toggle-github').animate({top:'+=510'},400);
-//});
-//social icon toggle - LinkedIn
-//$('#linkedin').mouseenter(function() {
-//	$('#toggle-linkedin').animate({top:'+=450px'}, 500);
-//	$('#toggle-linkedin').show();
-//});
-//$('#toggle-linkedin').mouseleave(function(){
-//	$('#toggle-linkedin').hide();
-//	$('#toggle-linkedin').animate({top:'+=510'},400);
-//});
-
+$('.site-credit').click(siteCreditClicked);
+function siteCreditClicked(evt) {
+	evt.preventDefault();
+	$('.greeting').css({"backgroundColor": "rgba(0,0,0,.5)", "color" : "white"});
+	$('.greeting h2').html("Thank You").css({"color":"white"});
+	$('.social-icons, .toggle-soc, .greeting p').hide();
+	$('p.credit-list').show();
+}
+$('.return, .greeting').click(greetingClicked);
+function greetingClicked () {
+	event. preventDefault();
+	$('.greeting').css({"backgroundColor": "rgba(255,255,255,.5)", "color" : "#333"});
+	$('.greeting h2').html("Get in Touch").css({"color":"#333"});
+	$('.social-icons, .toggle-soc, .greeting p').show();
+	$('p.credit-list').hide();
+}
 
