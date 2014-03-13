@@ -113,6 +113,17 @@ $('.toggle-soc img').mouseleave(function(){
 	$(this).hide().animate({top:'+=510'},400);
 });
 
+
+//social icon toggle for media query 480px- Gmail, twitter, github,linkedin
+//$('.social-icons img').mouseenter(function() {
+//	var targetId = $(this).data('target-id')
+//	$(targetId).animate({top:'+=350px'}, 500).show();
+//});
+//$('.toggle-soc img').mouseleave(function(){
+//	$(this).hide().animate({top:'+=400'},400);
+//});
+
+
 $('.site-credit').click(siteCreditClicked);
 function siteCreditClicked(evt) {
 	evt.preventDefault();

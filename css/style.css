@@ -651,3 +651,345 @@ p.credit-list a:hover {
 	color: #37aa12;
 }
 
+@media screen and (max-width: 768px) {
+	body{
+		max-width: 768px;
+		min-width: 768px;
+		font-size: 16px;
+	}
+	p { 
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 30px 40px 80px 40px;
+	}
+	.landing-page-container .slogan {
+		position: absolute;
+		left: 10em;
+	}
+	.slidedown {
+		position: absolute;
+		left: 500px;
+	}
+	.painting4 img{
+		max-width: 600px;
+		padding-left: 5.5em;
+	}
+	.work-sixtysix-container .view-toggle .client h3,
+	.work-sixtysix-container .view-toggle .client a {
+		margin-left: 42px;
+	}
+	.slide-trigger a {
+		position: relative;
+		left: 280px;
+	}
+	#paintings-slide-a,
+	#paintings-slide-b {
+		padding-left: 80px;
+		max-width: 600px;
+	}
+	#paintings-slide-b {
+		padding-top: 400px;
+	}
+	.feedback p {
+		font-size: 18px;
+		padding-bottom: 20px;
+	}
+	img.profile {
+		margin-left: 580px;
+		width: 120px;
+	}
+	.author p {
+		padding-right: 20px;
+		padding-bottom: 20px;
+		font-size: 14px;
+	}
+	.close-mark {
+		padding-right: 380px;
+	}
+	.work-unlikeness-container .the-final img {
+		width: 650px;
+		padding: 80px 60px;
+	}
+	.view-toggle .client h3,
+	.view-toggle .client a {
+		margin-left: 42px;
+	}
+	.work-timelocket-container .view-toggle .the-final img {
+		padding: 80px 80px;
+	}
+	.work-timelocket-container .view-toggle .feedback img.profile {
+		margin-left: 580px;
+	}
+	.process-diagram img {
+		padding-left: 135px;
+	}
+	.process-step {
+		width: 150px;
+		padding: 1% 2%;
+	}
+	.process-step p {
+		padding: 30px 20px 30px 20px;
+	}
+	.steps-one,
+	.steps-two {
+		width: 750px;
+		height: 350px;
+		padding-left: 20px;
+	}
+	.greeting {
+		width: 450px;
+		position: absolute;
+		left: 280px;
+	}
+	.greeting p {
+		width: 380px;
+		padding: 30px 40px 80px 40px;
+	}
+	.gray-email, .gray-twitter, .gray-github, .gray-linkedin, #email, #twitter, #github, #linkedin {
+		width: 50px;
+		height: 50px;
+	}
+	.gray-email {
+		position: absolute;
+		left:410px;
+	}
+	.gray-twitter{
+		position: absolute;
+		left: 460px;
+	}
+	.gray-github {
+		position: absolute;
+		left:510px;
+	}
+	.gray-linkedin {
+		position: absolute;
+		left: 560px;
+	}
+	#email {
+		position: absolute;
+		left:410px;
+		top: 500px;
+	}
+	#twitter {
+		position: absolute;
+		left:460px;
+		top: 500px;
+	}
+	#github {
+		position: absolute;
+		left:510px;
+		top: 500px;
+	}
+	#linkedin {
+		position: absolute;
+		left: 560px;
+		top: 500px;
+	}
+}
+@media screen and (max-width: 480px) {
+	body{
+		max-width: 480px;
+		min-width: 480px;
+		font-size: 14px;
+	}
+	p { 
+		font-size: 14px;
+		line-height: 1.5;
+		padding: 30px 40px 80px 40px;
+	}
+	h2 {
+		font-size: 3em;
+		padding: 50px 0 10px 0;
+		line-height: 1.5;
+	}
+	.landing-page-container .slogan {
+		position: absolute;
+		left: 12.5em;	
+		top: 520px;
+	}
+	.landing-page-container h1.slogan {
+		font-size: 20px;		
+	}
+	.slidedown {
+		position: absolute;
+		left: 250px;
+	}
+	.slidedown nav ul li {
+		padding-left: 16px;
+	}
+	.painting4 img{
+		max-width: 380px;
+		padding-left: 4em;
+	}
+	.view-button {
+		padding: 10px;
+		width: 8em;
+	}
+	.buttons {
+		padding-bottom: 80px;
+	}
+	.work-sixtysix-container .view-toggle .client h3,
+	.work-sixtysix-container .view-toggle .client a {
+		margin-left: 38px;
+	}
+	.client {
+		width: 450px;
+		padding-left: 20px;
+	}
+	.painting4 img {
+		margin-bottom: 30px;
+	}
+	.slide-trigger a {
+		position: relative;
+		left: 140px;
+	}
+	.paintings-slide {
+		height: 700px;
+	}
+	#paintings-slide-a,
+	#paintings-slide-b {
+		padding-left: 40px;
+		max-width: 400px;
+	}
+	#paintings-slide-b {
+		padding-top: 240px;
+	}
+	.feedback p {
+		font-size: 14px;
+	}
+	img.profile {
+		margin-left: 320px;
+		width: 80px;
+	}
+	.author p {
+		padding-right: 30px;
+		padding-bottom: 20px;
+		font-size: 12px;
+	}
+	.close-mark {
+		padding-right: 230px;
+		font-size: 30px;
+	}
+	.cover-image, .cover-image img{
+		width: 350px;
+	}
+	.work-unlikeness-container .the-final img {
+		width: 400px;
+		padding: 80px 40px;
+	}
+	.jacket-image, .jacket-image img{
+		width: 300px;
+	}
+	.work-timelocket-container .view-toggle .the-final img {
+		width: 400px;
+		padding: 80px 40px;
+	}
+	.work-timelocket-container .view-toggle .feedback img.profile {
+		margin-left: 320px;
+	}
+	.process-diagram img {
+		width: 350px;
+		padding-left: 60px;
+	}
+	.process-step {
+		width: 200px;
+		height: 100%;
+		padding: 1% 1%;
+		float: none;
+		margin: 0 auto;
+		box-shadow: none;
+	}
+	.steps-two {
+		padding-bottom: 40px;
+	}
+	.steps-one, .steps-two {
+		width: 400px;
+		height: 100%;
+		margin-left: 40px;
+		padding-left: 0;
+	}
+	.process-step p {
+		background-color: rgba(0,0,0,.15);
+		/*display: none;*/
+	}
+	.process-step h4 {
+		text-align: center;
+		padding: 10px 0;
+		border-radius: 4px;
+		box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+	}	
+	.quote-container p {
+		font-size: 18px;
+	}
+	.contact-page-container {
+		background: url(../img/contactRosaA.jpg) center top no-repeat;
+		height: 560px;
+	}
+	.greeting {
+		width: 300px;
+		height: 450px;
+		position: absolute;
+		left: 160px;
+		top: 60px;
+	}
+	.contact-page-container .greeting h2 {
+		padding-top: 30px;
+	}
+	.greeting p {
+		width: 300px;
+		padding: 30px 8px 80px 8px;
+	}
+	.gray-email, .gray-twitter, .gray-github, .gray-linkedin, #email, #twitter, #github, #linkedin {
+		width: 50px;
+		height: 50px;
+	}
+	.gray-email {
+		position: absolute;
+		left:210px;
+		top: 350px;
+	}
+	.gray-twitter{
+		position: absolute;
+		left: 260px;
+		top: 350px;
+	}
+	.gray-github {
+		position: absolute;
+		left: 310px;
+		top: 350px;
+	}
+	.gray-linkedin {
+		position: absolute;
+		left: 360px;
+		top: 350px;
+	}
+	#email {
+		position: absolute;
+		left:210px;
+		top: 400px;
+	}
+	#twitter {
+		position: absolute;
+		left:260px;
+		top: 400px;
+	}
+	#github {
+		position: absolute;
+		left:310px;
+		top: 400px;
+	}
+	#linkedin {
+		position: absolute;
+		left: 360px;
+		top: 400px;
+	}
+	p.credit-list {
+		font-size: 12px;
+		width: 260px;
+		position: absolute;
+		top: 100px;
+		padding-left: 20px;
+	}
+}
+
+
