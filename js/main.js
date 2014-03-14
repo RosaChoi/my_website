@@ -33,7 +33,7 @@ var FAST_SCROLL = 600
 $('#sixtysix').click(sixtysixClicked);
 	function sixtysixClicked() {
 	console.log('sixtysixClicked')
-	var targetY = $('.work-sixtysix-container').offset().top;
+	var targetY = $('.work-sixtysix').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }
 
@@ -41,7 +41,7 @@ $('#sixtysix').click(sixtysixClicked);
 $('#unlikeness').click(unlikenessClicked);
 	function unlikenessClicked() {
 	console.log('unlikenessClicked')
-	var targetY = $('.work-unlikeness-container').offset().top;
+	var targetY = $('.work-unlikeness').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }	
 
@@ -49,7 +49,7 @@ $('#unlikeness').click(unlikenessClicked);
 $('#locket').click(locketClicked);
 	function locketClicked() {
 	console.log('locketClicked')
-	var targetY = $('.work-timelocket-container').offset().top;
+	var targetY = $('.work-timelocket').offset().top;
 	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
 }
 
@@ -57,7 +57,7 @@ $('#locket').click(locketClicked);
 $('#mystory').click(myStoryClicked);
 function myStoryClicked() {
 	console.log('myStoryClicked')
-	var targetY = $('.my-story-container').offset().top;
+	var targetY = $('.my-story').offset().top;
 	$('body').animate({scrollTop: targetY}, 900);
 }
 
@@ -65,7 +65,7 @@ function myStoryClicked() {
 $('#contact').click(contactClicked);
 function contactClicked() {
 	console.log('contactClicked')
-	var targetY = $('.contact-page-container').offset().top;
+	var targetY = $('.contact-page').offset().top;
 	$('body').animate({scrollTop: targetY}, 900);
 }
 
@@ -81,14 +81,14 @@ function viewButtonClicked () {
 	$('#first-dot').trigger('click')
 }
 
-$('.feedback').click(elseWhereClicked);
-function elseWhereClicked () {
-	event. preventDefault();
+$('.close-mark').click(closeMarkClicked);
+function closeMarkClicked () {
+	event.preventDefault();
 	$('.view-toggle').slideUp('fast');
 	$('.view-button').show();
-	var targetId = $('.view-button').data('target-id');
+	var targetId = $(this).closest('.container')
 	var targetY = $(targetId).offset().top;
-	$('body').animate({scrollTop: targetY}, 900);
+	$('body').animate({scrollTop: targetY}, 900); 
 }
 
 //painting carousel
@@ -103,25 +103,41 @@ function slideTriggerClicked(evt) {
 	$("#paintings-slide-b").attr('src', targetSrcB);
 }
 
+//Process step description slide down and slid up
+$('h4.prostep').click(stepClicked);
+function stepClicked () {
+	event.preventDefault();
+	console.log('stepClicked');
+	var targetId = $(this).siblings('p.method');
+	$(targetId).slideDown('fast');
+}
+$('p.method').click(methodClicked);
+function methodClicked () {
+	event.preventDefault();
+	console.log('methodClicked');
+	$(this).slideUp('fast');
+}
 
-//social icon toggle - Gmail, twitter, github,linkedin
-$('.social-icons img').mouseenter(function() {
-	var targetId = $(this).data('target-id')
-	$(targetId).animate({top:'+=450px'}, 500).show();
+//social icon toggle - twiter, github, linkedin
+$('#twitter').mouseenter(function() {
+	$('.toggle-soc .fa.fa-twitter-square').css({"color": "#55acef"});
 });
-$('.toggle-soc img').mouseleave(function(){
-	$(this).hide().animate({top:'+=510'},400);
+$('#twitter').mouseleave(function() {
+	$('.toggle-soc .fa.fa-twitter-square').css({"color": "#e9e9e9"});
 });
 
-
-//social icon toggle for media query 480px- Gmail, twitter, github,linkedin
-//$('.social-icons img').mouseenter(function() {
-//	var targetId = $(this).data('target-id')
-//	$(targetId).animate({top:'+=350px'}, 500).show();
-//});
-//$('.toggle-soc img').mouseleave(function(){
-//	$(this).hide().animate({top:'+=400'},400);
-//});
+$('#github').mouseenter(function() {
+	$('.toggle-soc .fa.fa-github-square').css({"color": "black"});
+});
+$('#github').mouseleave(function() {
+	$('.toggle-soc .fa.fa-github-square').css({"color": "#e9e9e9"});
+});
+$('#linkedin').mouseenter(function() {
+	$('.toggle-soc .fa.fa-linkedin-square').css({"color": "#276eac"});
+});
+$('#linkedin').mouseleave(function() {
+	$('.toggle-soc .fa.fa-linkedin-square').css({"color": "#e9e9e9"});
+});
 
 
 $('.site-credit').click(siteCreditClicked);
@@ -129,7 +145,7 @@ function siteCreditClicked(evt) {
 	evt.preventDefault();
 	$('.greeting').css({"backgroundColor": "rgba(0,0,0,.5)", "color" : "white"});
 	$('.greeting h2').html("Thank You").css({"color":"white"});
-	$('.social-icons, .toggle-soc, .greeting p').hide();
+	$('.toggle-soc, .greeting p, #email').hide();
 	$('p.credit-list').show();
 }
 $('.return, .greeting').click(greetingClicked);
@@ -137,7 +153,7 @@ function greetingClicked () {
 	event. preventDefault();
 	$('.greeting').css({"backgroundColor": "rgba(255,255,255,.5)", "color" : "#333"});
 	$('.greeting h2').html("Get in Touch").css({"color":"#333"});
-	$('.social-icons, .toggle-soc, .greeting p').show();
+	$('.toggle-soc, .greeting p, #email').show();
 	$('p.credit-list').hide();
 }
 
