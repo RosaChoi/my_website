@@ -2,7 +2,7 @@
 $('.dropdown-work').mouseenter(function(){
 	$('.slidedown').slideToggle('300');
 });
-$('.dropdown-work').mouseleave(function(){
+$('.slidedown').mouseleave(function(){
 	$('.slidedown').slideToggle('200');
 });
 
@@ -19,15 +19,6 @@ function homeClicked() {
 
 //Snap to each pages
 var FAST_SCROLL = 600
-
-//$('.work-selection li').click(slideDownWorkClicked);
-//function slideDownWorkClicked() {
-//	event.preventDefault();
-//	console.log('slideDownWorkClicked');
-//	var targetId = $(this).data('target-id');
-//	var targetY = $(targetId).offset().top;
-//	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
-//}
 
 //snap to Sixty-six Days from top nav menu//
 $('#sixtysix').click(sixtysixClicked);
@@ -75,17 +66,24 @@ function viewButtonClicked () {
 	event.preventDefault();
 	console.log('viewButtonClicked this:' + $(this).data('target-id'));
 	var targetId = $(this).data('target-id');
+	var targetDiv = $(this).closest('.container')
 	$(this).hide();  //Hide the button that was just clicked
-	$('.view-toggle').slideUp('fast');  //Slide all the other .view-toggles up
+//	$('.view-toggle').slideUp('fast');  //Slide all the other .view-toggles up
+	$(targetDiv).siblings('.container').hide();
 	$(targetId).slideDown('fast');  //Slide the current target id down.
-	$('#first-dot').trigger('click')
+	$('#first-dot').trigger('click');
+	$('body').animate({scrollTop: 0}, 600);
+	return false;
 }
 
 $('.close-mark').click(closeMarkClicked);
 function closeMarkClicked () {
 	event.preventDefault();
+	var targetDiv = $(this).closest('.container')
 	$('.view-toggle').slideUp('fast');
 	$('.view-button').show();
+	var targetDiv = $(this).closest('.container')
+	$(targetDiv).siblings('.container').show();
 	var targetId = $(this).closest('.container')
 	var targetY = $(targetId).offset().top;
 	$('body').animate({scrollTop: targetY}, 900); 

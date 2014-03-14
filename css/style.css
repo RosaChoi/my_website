@@ -189,7 +189,7 @@ h3 {
 .paintings-slide {
 	position: relative;
 	width: 100%;
-	height: 1100px;
+	height: 880px;
 	overflow: hidden;
 }
 #paintings-slide-a {
@@ -197,15 +197,14 @@ h3 {
 	top: 0px;
 	left:0px;
 	padding-top: 60px;
-	padding-left: 240px;
+	padding-left: 340px;
 }
-
 #paintings-slide-b {
 	position: absolute;
 	top: 100px;
 	left:0px;
-	padding-top: 500px;
-	padding-left: 240px;
+	padding-top: 360px;
+	padding-left: 340px;
 }
 nav.slide-trigger  {
 	height: 50px;
