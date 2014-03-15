@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<script type="text/javascript">
-(function(doc) {
-
-	var addEvent = 'addEventListener',
-	    type = 'gesturestart',
-	    qsa = 'querySelectorAll',
-	    scales = [1, 1],
-	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
-
-	function fix() {
-		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
-		doc.removeEventListener(type, fix, true);
-	}
-
-	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
-		fix();
-		scales = [.25, 1.6];
-		doc[addEvent](type, fix, true);
-	}
-
-	}(document));
-	</script>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 	<title>WASELROSA</title>
 	<link rel="stylesheet" href="css/normalize.css"/>	
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-	<!--<a class="scrollup" href="#"><img src="img/logo-icon.png"></a>-->
 	<div class="landing-page container">
 		<h1 class="slogan">Some Brave Dreams</h1>
 		<nav class="top-nav">

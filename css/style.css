@@ -56,8 +56,7 @@ p {
 	font-size: 2.7em;
 	position: absolute;
 	top: 540px;
-	left: 16em;
-	min-width: 464px;
+	left: 16em;	
 }
 h1.slogan {
 	font-weight: lighter;
@@ -135,11 +134,12 @@ h3 {
 	margin-bottom: 40px;
 }
 .painting4 {
-	width: 800px;
+	width: 100%;
 	margin: 0 auto;
 }
 .painting4 img {
 	margin-bottom: 80px;
+	padding-left: 250px;
 }
 .buttons {
 	padding-bottom: 100px;
@@ -746,7 +746,7 @@ i.fa.fa-envelope {
 	}
 }
 @media screen and (max-width: 480px) {
-	body{
+	body, html{
 		max-width: 480px;
 		min-width: 480px;
 		font-size: 16px;
@@ -763,11 +763,8 @@ i.fa.fa-envelope {
 	}
 	.landing-page .slogan {
 		position: absolute;
-		left: 12.5em;	
+		left: 280px;	
 		top: 520px;
-	}
-	.landing-page h1.slogan {
-		font-size: 20px;		
 	}
 	.slidedown {
 		position: absolute;
