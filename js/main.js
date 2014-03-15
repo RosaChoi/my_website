@@ -8,13 +8,13 @@ $('.slidedown').mouseleave(function(){
 
 
 //ScrollTop - home
-$('.home').click(homeClicked);
-function homeClicked() {
-	event.preventDefault();
-	console.log(homeClicked);
-	$('body').animate({scrollTop: 0}, 900);
-	return false;
-};
+//$('.home').click(homeClicked);
+//function homeClicked() {
+//	event.preventDefault();
+//	console.log(homeClicked);
+//	$('body').animate({scrollTop: 0}, 900);
+//	return false;
+//};
 
 
 //Snap to each pages
