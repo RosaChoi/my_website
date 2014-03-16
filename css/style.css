@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding:0;
 	font-family: 'MuseoSansRegular', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	/*font-weight: lighter;*/
 	text-transform: uppercase;
 }
 a {
@@ -106,7 +105,6 @@ h1.slogan {
 .work-sixtysix {
 	background-color: white;
 	width: 100%;
-	/*height: 1000px;*/
 }
 h2 {
 	font-size: 4em;
@@ -232,16 +230,6 @@ nav.slide-trigger  {
 	color: #333;
 	padding: 60px 0;
 }
-/*#painting-title {
-	font-family: 'MuseoSansRegular', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 12px;
-	text-align: center;
-	font-weight: lighter;
-	font-style: italic;
-	color: #333;
-	padding: 60px 0;
-}*/
 .work-sixtysix .view-toggle .the-final h3 {
 	color: #00b495;
 }
@@ -298,7 +286,7 @@ nav.slide-trigger  {
 .client {
 	width: 700px;
 	margin: 0 auto;
-	padding:3em;
+	padding-bottom: 6em;
 }
 .client p {
 	color: #d7ddb9;
@@ -360,7 +348,6 @@ img.profile {
 .work-timelocket {
 	background: url(../img/page004.jpg) center top no-repeat;
 	width: 100%;
-	/*height: 1300px;*/
 	background-size: cover;
 }
 .work-timelocket .entry-content h2 {
@@ -487,7 +474,6 @@ img.profile {
 /* Site Page Six - My Story*/
 .my-story {
 	background: url(../img/bigR.jpg) center top no-repeat;
-	/*height: 1143px;*/
 	background-size: cover;
 	width: 100%;
 }
@@ -517,7 +503,6 @@ img.profile {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-style: italic;
-	/*font-family: "ff-tisa-web-pro",serif;*/
 }
 .quote p.goethe {
 	font-size: 14px;
@@ -681,7 +666,8 @@ i.fa.fa-envelope {
 		font-size: 14px;
 	}
 	.close-mark {
-		padding-right: 380px;
+		padding-right: 360px;
+		font-size: 50px;
 	}
 	.work-unlikeness .the-final img {
 		width: 650px;
@@ -749,11 +735,11 @@ i.fa.fa-envelope {
 	body, html{
 		max-width: 480px;
 		min-width: 480px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	p { 
-		font-size: 16px;
-		line-height: 1.5;
+		font-size: 18px;
+		line-height: 2;
 		padding: 30px 40px 80px 40px;
 	}
 	h2 {
@@ -761,10 +747,15 @@ i.fa.fa-envelope {
 		padding: 50px 0 10px 0;
 		line-height: 1.5;
 	}
+	#logo {
+		width: 40%;
+		height: 40%;
+	}
 	.landing-page .slogan {
 		position: absolute;
 		left: 280px;	
 		top: 520px;
+		font-size: 2.2em;
 	}
 	.slidedown {
 		position: absolute;
@@ -775,11 +766,13 @@ i.fa.fa-envelope {
 	}
 	.painting4 img{
 		max-width: 380px;
-		padding-left: 3.5em;
+		padding-left: 3.2em;
 	}
 	.view-button {
 		padding: 14px;
-		width: 10em;
+		width: 12em;
+		box-shadow: none;
+		border-radius: 0;
 	}
 	.buttons {
 		padding-bottom: 80px;
@@ -790,7 +783,7 @@ i.fa.fa-envelope {
 	}
 	.client {
 		width: 450px;
-		padding-left: 20px;
+		padding-left: 15px;
 	}
 	.painting4 img {
 		margin-bottom: 30px;
@@ -825,7 +818,7 @@ i.fa.fa-envelope {
 	}
 	.close-mark {
 		padding-right: 210px;
-		font-size: 50px;
+		font-size: 70px;
 	}
 	.cover-image, .cover-image img{
 		width: 350px;
@@ -849,7 +842,7 @@ i.fa.fa-envelope {
 		padding-left: 60px;
 	}
 	.process-step {
-		width: 200px;
+		width: 300px;
 		height: 100%;
 		padding: 1% 1%;
 		float: none;
@@ -876,24 +869,25 @@ i.fa.fa-envelope {
 		font-size: 16px;
 		text-align: center;
 		padding: 20px 0;
-		border-radius: 4px;
 		box-shadow: 1px 1px 1px rgba(0,0,0,.15);
 	}
 	.my-story .entry-content h2 {
 		padding: 50px 20px 10px 20px;
 	}	
 	.quote p {
-		font-size: 18px;
+		font-size: 26px;
+		font-style: normal;
+
 	}
 	.contact-page {
 		background: url(../img/contactRosaA.jpg) center top no-repeat;
 		height: 560px;
 	}
 	.greeting {
-		width: 300px;
+		width: 320px;
 		height: 450px;
 		position: absolute;
-		left: 160px;
+		left: 120px;
 		top: 60px;
 	}
 	.contact-page .greeting h2 {
@@ -902,18 +896,19 @@ i.fa.fa-envelope {
 	.greeting p {
 		width: 280px;
 		padding: 30px 8px 80px 8px;
+		line-height: 1.5;
 	}
 	p.credit-list {
-		font-size: 12px;
-		width: 260px;
+		font-size: 14px;
+		width: 280px;
 		position: absolute;
 		top: 100px;
 		padding-left: 20px;
 	}
 	a#email {
-		font-size: 14px;
+		font-size: 16px;
 		position: absolute;
-		top: 300px;
+		top: 320px;
 		left: 80px;
 	}
 	.toggle-soc {
@@ -921,20 +916,22 @@ i.fa.fa-envelope {
 	}
 	#twitter { 
 		position: absolute;
-		left: 230px;
-		top: 390px;
+		left: 200px;
+		top: 410px;
 	}
 	#github {
 		position: absolute;
-		left: 290px;
-		top: 390px;
+		left: 260px;
+		top: 410px;
 	}
 	#linkedin {
 		position: absolute;
-		left: 350px;
-		top: 390px;
+		left: 320px;
+		top: 410px;
 	}
-
+	.footer-nav nav ul li {
+		font-size: 16px;
+	}
 }
 
 
