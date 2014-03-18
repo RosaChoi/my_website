@@ -100,6 +100,10 @@ h1.slogan {
 .slidedown nav ul li a:hover {
 	color: #f9c87a;
 }
+.mobile-dropdown,
+#hamberger {
+	display: none;
+}
 
 /* Site Page Two*/
 .work-sixtysix {
@@ -735,21 +739,21 @@ i.fa.fa-envelope {
 	body, html{
 		max-width: 480px;
 		min-width: 480px;
-		font-size: 18px;
+		font-size: 20px;
 	}
 	p { 
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 2;
 		padding: 30px 40px 80px 40px;
 	}
 	h2 {
-		font-size: 3em;
+		font-size: 2.5em;
 		padding: 50px 0 10px 0;
 		line-height: 1.5;
 	}
 	#logo {
 		width: 40%;
-		height: 40%;
+		height: 50%;
 	}
 	.landing-page .slogan {
 		position: absolute;
@@ -757,16 +761,50 @@ i.fa.fa-envelope {
 		top: 520px;
 		font-size: 2.2em;
 	}
-	.slidedown {
-		position: absolute;
-		left: 230px;
+	.top-nav ul li {
+		display: none;
 	}
-	.slidedown nav ul li {
-		padding-left: 16px;
+	#hamberger {
+		font-size: 44px;
+		position: absolute;
+		left: 400px;
+		top: 35px;
+		color: white;
+		display: block;
+	}
+	.mobile-dropdown {
+		width: 100%;
+		height: 800px;
+		position: absolute;
+		top:0px;
+		background: #4077c1;
+		padding-top: 60px;
+		display: none;
+	}
+	.mobile-dropdown ul li {
+		font-family: 'MuseoSansRegular', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		text-transform: uppercase;
+		font-size: 40px;
+		line-height: 2;
+		list-style: none;
+		padding-left: 30px;
+		font-weight: bold;
+	}
+	.mobile-dropdown ul li a {
+		color: white;
+	}
+	.mobile-dropdown ul li a:hover{
+		color: #f9c87a;
+	}
+	.mobile-dropdown ul li.work-list {
+		font-size: 32px;
+		font-weight: lighter;
+		padding-left: 50px;
 	}
 	.painting4 img{
 		max-width: 380px;
-		padding-left: 3.2em;
+		padding-left: 2.8em;
 	}
 	.view-button {
 		padding: 14px;
@@ -805,7 +843,7 @@ i.fa.fa-envelope {
 		padding-top: 240px;
 	}
 	.feedback p {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	img.profile {
 		margin-left: 320px;
@@ -814,7 +852,7 @@ i.fa.fa-envelope {
 	.author p {
 		padding-right: 30px;
 		padding-bottom: 20px;
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.close-mark {
 		padding-right: 210px;
@@ -863,7 +901,7 @@ i.fa.fa-envelope {
 		display: none;
 	}
 	p.method {
-		font-size: 16px;
+		font-size: 20px;
 	}
 	.prostep {
 		font-size: 16px;
@@ -875,9 +913,8 @@ i.fa.fa-envelope {
 		padding: 50px 20px 10px 20px;
 	}	
 	.quote p {
-		font-size: 26px;
+		font-size: 29px;
 		font-style: normal;
-
 	}
 	.contact-page {
 		background: url(../img/contactRosaA.jpg) center top no-repeat;
@@ -895,7 +932,7 @@ i.fa.fa-envelope {
 	}
 	.greeting p {
 		width: 280px;
-		padding: 30px 8px 80px 8px;
+		padding: 20px 8px 80px 8px;
 		line-height: 1.5;
 	}
 	p.credit-list {
@@ -906,10 +943,10 @@ i.fa.fa-envelope {
 		padding-left: 20px;
 	}
 	a#email {
-		font-size: 16px;
+		font-size: 20px;
 		position: absolute;
-		top: 320px;
-		left: 80px;
+		top: 330px;
+		left: 60px;
 	}
 	.toggle-soc {
 		font-size: 60px;
@@ -917,17 +954,17 @@ i.fa.fa-envelope {
 	#twitter { 
 		position: absolute;
 		left: 200px;
-		top: 410px;
+		top: 420px;
 	}
 	#github {
 		position: absolute;
 		left: 260px;
-		top: 410px;
+		top: 420px;
 	}
 	#linkedin {
 		position: absolute;
 		left: 320px;
-		top: 410px;
+		top: 420px;
 	}
 	.footer-nav nav ul li {
 		font-size: 16px;

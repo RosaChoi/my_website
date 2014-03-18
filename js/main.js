@@ -6,17 +6,6 @@ $('.slidedown').mouseleave(function(){
 	$('.slidedown').slideToggle('200');
 });
 
-
-//ScrollTop - home
-//$('.home').click(homeClicked);
-//function homeClicked() {
-//	event.preventDefault();
-//	console.log(homeClicked);
-//	$('body').animate({scrollTop: 0}, 900);
-//	return false;
-//};
-
-
 //Snap to each pages
 var FAST_SCROLL = 600
 
@@ -155,4 +144,67 @@ function greetingClicked () {
 	$('p.credit-list').hide();
 }
 
+$('.hamberger').click(hambergerClicked);
+function hambergerClicked(evt) {
+	evt.preventDefault();
+	$('.mobile-dropdown').slideDown('fast');
+	$('.landing-page').siblings('.container, .footer').hide();
+	return false;
+}
+
+$('.mobile-home').click(mobileHomeClicked);
+function mobileHomeClicked(evt) {
+	evt.preventDefault();
+	console.log('mobileHomeClicked');
+	$('.container, .footer').show();
+	$('.mobile-dropdown').hide('fast');
+	return false;
+}
+$('.mobile-sixtysix').click(mobileSixtysixClicked);
+function mobileSixtysixClicked(evt) {
+	evt.preventDefault();
+	$('.container, .footer').show();
+	var targetY = $('.work-sixtysix').offset().top;
+	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+	$('.mobile-dropdown').hide('fast');
+	return false;	
+}
+$('.mobile-land').click(mobileLandClicked);
+function mobileLandClicked(evt) {
+	evt.preventDefault();
+	$('.container, .footer').show();
+	var targetY = $('.work-unlikeness').offset().top;
+	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+	$('.mobile-dropdown').hide('fast');
+	return false;	
+}
+$('.mobile-time').click(mobileTimeClicked);
+function mobileTimeClicked(evt) {
+	evt.preventDefault();
+	$('.container, .footer').show();
+	var targetY = $('.work-timelocket').offset().top;
+	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+	$('.mobile-dropdown').hide('fast');
+	return false;	
+}
+
+$('.mobile-mystory').click(mobileMystoryClicked);
+function mobileMystoryClicked(evt) {
+	evt.preventDefault();
+	$('.container, .footer').show();
+	var targetY = $('.my-story').offset().top;
+	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+	$('.mobile-dropdown').hide('fast');
+	return false;	
+}
+
+$('.mobile-contact').click(mobileContactClicked);
+function mobileContactClicked(evt) {
+	evt.preventDefault();
+	$('.container, .footer').show();
+	var targetY = $('.contact-page').offset().top;
+	$('body').animate({scrollTop: targetY}, FAST_SCROLL);
+	$('.mobile-dropdown').hide('fast');
+	return false;	
+}
 
