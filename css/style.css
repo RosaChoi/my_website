@@ -5,6 +5,7 @@ body {
 	font-family: 'Helvetica Neue', sans-serif;
 	 -webkit-font-smoothing: antialiased;
 	 font-size: 16px;
+	 background: black;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin:0;
@@ -22,7 +23,7 @@ a:hover {
 p {
 	font-family: 'CallunaLghtRegular', serif;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	line-height: 2;
 	max-width: 700px;
 	padding-bottom: 80px;
@@ -40,6 +41,7 @@ p {
 	height: 18px;
 	padding-top: 40px;
 	padding-left: 40px;
+	overflow: hidden;
 }
 .top-nav ul {
 	list-style-type: none;
@@ -252,6 +254,13 @@ nav.slide-trigger  {
 	color: #d7ddb9;
 	padding-top: 100px;
 }
+.work-unlikeness .entry-content h2 p {
+	color: #852c04;
+	font-size: 24px;
+	font-style: italic;
+	text-transform: none;
+	text-align: center;
+}
 .work-unlikeness .entry-content p {
 	color: #d7ddb9;
 }
@@ -297,6 +306,11 @@ nav.slide-trigger  {
 	text-align: left;
 	padding-bottom: 20px;
 }
+.client p {
+	color: #d7ddb9;
+	font-size: 16px;
+	line-height: 1.5;
+}
 .client a {
 	color: #d7ddb9;
 	font-size: 14px;
@@ -324,7 +338,7 @@ nav.slide-trigger  {
 	margin-bottom: 50px;
 }
 .feedback p {
-	font-size: 24px;
+	font-size: 20px;
 	text-align: left;
 	line-height: 2;
 	padding-top: 30px;
@@ -400,8 +414,8 @@ img.profile {
 .work-timelocket .view-toggle .feedback {
 	background: white;
 }
-.work-timelocket.view-toggle .feedback img.profile {
-	margin-left: 900px;
+img.profile {
+	margin-left: 888px;
 }
 
 /* Site Page Five - My Work Process*/
@@ -507,6 +521,7 @@ img.profile {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-style: italic;
+	text-align: center;
 }
 .quote p.goethe {
 	font-size: 14px;
@@ -519,9 +534,10 @@ img.profile {
 /*Site Page Eight - Contact*/
 .contact-page {
 	background: url(../img/contactRosa.jpg) center top no-repeat;
-	height: 857px;
-	background-size: cover;
-	position: relative
+	height: 855px;
+	/*background-size: cover;*/
+	position: relative;
+	margin: 0;
 }
 .contact-page .greeting h2 {
 	color: #333;
@@ -533,18 +549,21 @@ img.profile {
 	box-shadow: 0 0 .5px rgba(0,0,0,.75);
 	width: 600px;
 	height: 600px;
+	margin: 0;
 	position: absolute;
 	left: 520px;
 	top: 120px;
-	position: relative;
+	/*position: relative;*/
 }
 .greeting p {
 	width: 450px;
+	color: #333;
+	/*font-weight: bold;*/
 }
 p.credit-list{
 	position: absolute;
 	top: 150px;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: left;
 	padding-left: 70px;
 	font-family: 'MuseoSansRegular', sans-serif;
@@ -571,8 +590,8 @@ p.credit-list a:hover {
 }
 #email {
 	position: absolute;
-	left: 200px;
-	top: 260px;
+	left: 190px;
+	top: 400px;
 	color: #333;
 	font-size: 20px;
 }
@@ -582,24 +601,28 @@ i.fa.fa-envelope {
 #twitter {
 	position: absolute;
 	left: 740px;
-	top: 450px;
+	top: 550px;
 }
 #github {
 	position: absolute;
 	left: 800px;
-	top: 450px;
+	top: 550px;
 }
 #linkedin {
 	position: absolute;
 	left: 860px;
-	top: 450px;
+	top: 550px;
 }
 
 /*footer*/
 .footer-nav nav{
-	height: 60px;
 	background: white;
 	margin: 0;
+	height: 60px;
+}
+.footer-nav nav ul {
+	margin: 0;
+	padding: 0;
 }
 .footer-nav nav ul li {
 	list-style-type: none;
@@ -608,6 +631,7 @@ i.fa.fa-envelope {
 	font-size: 12px;
 	color: #333;
 	padding-right: 60px;
+	padding-top: 10px;
 }
 .footer-nav nav ul li a {
 	text-decoration: none;
@@ -716,23 +740,23 @@ i.fa.fa-envelope {
 	a#email {
 		font-size: 16px;
 		position: absolute;
-		top: 310px;
+		top: 410px;
 		left: 150px;
 	}
 	#twitter {
 		position: absolute;
 		left: 430px;
-		top: 480px;
+		top: 580px;
 	}
 	#github {
 		position: absolute;
 		left: 490px;
-		top: 480px;
+		top: 580px;
 	}
 	#linkedin {
 		position: absolute;
 		left: 550px;
-		top: 480px;
+		top: 580px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -750,10 +774,6 @@ i.fa.fa-envelope {
 		font-size: 2.5em;
 		padding: 50px 0 10px 0;
 		line-height: 1.5;
-	}
-	#logo {
-		width: 40%;
-		height: 50%;
 	}
 	.landing-page .slogan {
 		position: absolute;
@@ -918,7 +938,7 @@ i.fa.fa-envelope {
 	}
 	.contact-page {
 		background: url(../img/contactRosaA.jpg) center top no-repeat;
-		height: 560px;
+		height: 536px;
 	}
 	.greeting {
 		width: 320px;
@@ -928,12 +948,13 @@ i.fa.fa-envelope {
 		top: 60px;
 	}
 	.contact-page .greeting h2 {
-		padding-top: 30px;
+		padding-top: 10px;
 	}
 	.greeting p {
 		width: 280px;
-		padding: 20px 8px 80px 8px;
+		padding: 0px 8px 80px 8px;
 		line-height: 1.5;
+		font-size: 16px;
 	}
 	p.credit-list {
 		font-size: 14px;
@@ -943,28 +964,28 @@ i.fa.fa-envelope {
 		padding-left: 20px;
 	}
 	a#email {
-		font-size: 20px;
+		font-size: 18px;
 		position: absolute;
-		top: 330px;
+		top: 360px;
 		left: 60px;
 	}
 	.toggle-soc {
-		font-size: 60px;
+		font-size: 50px;
 	}
 	#twitter { 
 		position: absolute;
 		left: 200px;
-		top: 420px;
+		top: 440px;
 	}
 	#github {
 		position: absolute;
 		left: 260px;
-		top: 420px;
+		top: 440px;
 	}
 	#linkedin {
 		position: absolute;
 		left: 320px;
-		top: 420px;
+		top: 440px;
 	}
 	.footer-nav nav ul li {
 		font-size: 16px;
