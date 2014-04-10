@@ -33,13 +33,13 @@ function viewButtonClicked (event) {
 	event.preventDefault();
 	console.log('viewButtonClicked this:' + $(this).data('target-id'));
 	var targetId = $(this).data('target-id');
-	var targetDiv = $(this).closest('.container')
+	var targetDiv = $(this).closest('.container');
 	$(this).hide();  //Hide the button that was just clicked
 	$(targetDiv).siblings('.container').hide();
 	$(targetId).slideDown('fast');  //Slide the current target id down.
-	$('#first-dot').trigger('click');
-	$('body,html').animate({scrollTop: 0}, 600);
-	return false;
+	$('#first-dot').trigger('click'); 
+	var targetY = $('.view-toggle').offset().top;
+	$('body,html').animate({scrollTop: targetY}, FAST_SCROLL);
 }
 
 $('.close-mark').click(closeMarkClicked);

@@ -419,6 +419,7 @@ a.close-mark {
 }
 img.profile {
 	margin-left: 888px;
+	width: 137px;
 }
 
 /* Site Page Five - My Work Process*/
@@ -513,6 +514,7 @@ img.profile {
 	padding-bottom: 40px;
 	color: white;
 	background: #786d5f;
+	width: 100%;
 }
 .rosa-desc {
 	color: #b42b3d;
@@ -524,7 +526,6 @@ img.profile {
 }
 .my-story .entry-content p {
 	color: #60574c;
-	/*text-shadow: 1px 1px 2px #fff;	*/
 }
 .my-story .buttons a {
 	margin-top: 40px;
@@ -537,7 +538,6 @@ background: white;
 .my-story .view-toggle h3 {
 	font-size: 42px;
 	text-transform: none;
-/*	font-weight: lighter;*/
 	color: white;
 	text-align: left;
 }
@@ -550,6 +550,34 @@ span.jedi {
 	position: relative;
 	left: 700px;
 	top: 420px;
+}
+.wrapper-home strong {
+	text-decoration: line-through;
+	font-weight: normal;
+}
+
+.my-story .entry-content p.share{
+	color: #786d5f;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;	
+}
+.fa-twitter {
+	font-size: 18px;
+	color: #ccc;
+	padding: 0 10px;
+}
+.fa-twitter:hover {
+	color: black;
+}
+.share02 img {
+	max-width: 20px;
+	vertical-align: middle;
+}
+.wrapper-roots {
+	background: url(../img/asia.jpg) center top no-repeat;
+	height: 620px;
+	padding: 0;
+	margin-top: 80px;
 }
 .wrapper-america {
 	background: url(../img/america.jpg) center top no-repeat;
@@ -583,16 +611,27 @@ span.jedi {
 	padding: 0;
 	width: 25%;
 }
+.wrapper-tech {
+	background: url(../img/tech01.jpg) center top no-repeat;
+	height: 182px;
+	padding: 0;
+	margin-top: 60px;
+}
+.wrapper-tech span {
+	position: relative;
+	left: 720px;
+	top: 100px;
+}
 .wrapper-uae {
 	background: url(../img/dune.jpg) center top no-repeat;
 	height: 620px;
 	padding: 0;
 }
-.wrapper-turkey {
+/*.wrapper-turkey {
 	background: url(../img/turkey01.jpg) center top no-repeat;
 	height: 620px;
 	padding: 0;
-}
+}*/
 .wrapper-art {
 	background: url(../img/iheartart.jpg) center top no-repeat;
 	height: 620px;
@@ -614,9 +653,12 @@ span.jedi {
 	padding: 0;
 }
 .wrapper-home {
-	background: url(../img/jedi.jpg) center top no-repeat;
+	background: url(../img/rosareturn.jpg) center top no-repeat;
 	height: 700px;
 	padding: 0;
+}
+#rc {
+	max-width: 100px;
 }
 
 /*Site Page Seven - Quote*/
@@ -709,6 +751,7 @@ p.credit-list a:hover {
 }
 i.fa.fa-envelope {
 	color: #37aa12;
+	padding-right: 5px;
 }
 #twitter {
 	position: absolute;
@@ -770,8 +813,8 @@ i.fa.fa-envelope {
 	}
 	p { 
 		font-size: 16px;
-		line-height: 1.5;
-		padding: 30px 40px 80px 40px;
+		line-height: 2;
+		padding: 30px 100px 80px 100px;
 	}
 	.landing-page .slogan {
 		position: absolute;
@@ -784,10 +827,6 @@ i.fa.fa-envelope {
 	.painting4 img{
 		max-width: 600px;
 		padding-left: 5.5em;
-	}
-	.work-sixtysix .view-toggle .client h3,
-	.work-sixtysix .view-toggle .client a {
-		margin-left: 42px;
 	}
 	.slide-trigger a {
 		position: relative;
@@ -810,12 +849,12 @@ i.fa.fa-envelope {
 		width: 120px;
 	}
 	.author p {
-		padding-right: 20px;
+		padding-right: 80px;
 		padding-bottom: 20px;
 		font-size: 14px;
 	}
-	.close-mark {
-		padding-right: 360px;
+	a.close-mark {
+		padding-right: 362px;
 		font-size: 50px;
 	}
 	.work-unlikeness .the-final img {
@@ -824,7 +863,7 @@ i.fa.fa-envelope {
 	}
 	.view-toggle .client h3,
 	.view-toggle .client a {
-		margin-left: 42px;
+		margin-left: 38px;
 	}
 	.work-timelocket .view-toggle .the-final img {
 		padding: 80px 80px;
@@ -849,6 +888,50 @@ i.fa.fa-envelope {
 		height: 350px;
 		padding-left: 20px;
 	}
+	h3.rosa-desc {
+		margin: 0;
+		padding-left: 50px;
+		font-size: 12px;
+		width: 200px;
+	}
+	.my-story .entry-content p.share {
+		padding: 30px 0;
+	}
+	.my-story .entry-content p.project-description {
+		margin-right: 100px;
+		width: 360px;
+		padding-left: 30px;
+		padding-right: 0;
+		line-height: 2;
+	}
+	.twopics {
+		width: 655px;
+		padding-left: 57px;
+	}
+	.iheartart03 img, .iheartart04 img, .iheartart05 img,
+	.iheartart06 img, .barcelona03 img, .barelona04 img {
+		display: none;
+	}
+	.fourpics {
+		width: 40%;
+		padding-left: 46px;
+		padding-right: 0;
+	}
+	.threepics {
+		width: 50%;
+	}
+	.travel-photos li:last-child {
+		display: none;
+	}
+	span {
+		font-size: 32px;
+	}
+	.wrapper-tech span {
+		left: 100px;
+	}
+	span.jedi {
+		left: 360px;
+	}
 	.greeting {
 		width: 450px;
 		position: absolute;
@@ -861,7 +944,7 @@ i.fa.fa-envelope {
 	a#email {
 		font-size: 16px;
 		position: absolute;
-		top: 410px;
+		top: 550px;
 		left: 150px;
 	}
 	#twitter {
@@ -901,6 +984,9 @@ i.fa.fa-envelope {
 		left: 280px;	
 		top: 520px;
 		font-size: 2.2em;
+	}
+	.top-nav {
+		height: 20px;
 	}
 	.top-nav ul li {
 		display: none;
@@ -988,16 +1074,16 @@ i.fa.fa-envelope {
 	}
 	img.profile {
 		margin-left: 320px;
-		width: 80px;
+		width: 100px;
 	}
 	.author p {
-		padding-right: 30px;
+		padding-right: 60px;
 		padding-bottom: 20px;
 		font-size: 16px;
 	}
-	.close-mark {
-		padding-right: 210px;
-		font-size: 70px;
+	a.close-mark {
+		padding-right: 219px;
+		font-size: 60px;
 	}
 	.cover-image, .cover-image img{
 		width: 350px;
@@ -1051,8 +1137,58 @@ i.fa.fa-envelope {
 		box-shadow: 1px 1px 1px rgba(0,0,0,.15);
 	}
 	.my-story .entry-content h2 {
-		padding: 50px 20px 10px 20px;
+		width: 100%;
+		height: 140px;
+		padding: 60px 0 0 0;
+	}
+	.rosa-desc {
+		float: none;
+		/*padding-bottom: 50px;*/
+		padding-right: 10px;
+		text-align: right;
+		box-shadow: inset -1px 0 0 rgba(120,109,95,.3);
 	}	
+	.my-story .entry-content p.share {
+		position: relative;
+		left: 230px;
+		bottom: 50px;
+	}
+	.my-story .entry-content p.project-description {
+		text-align: left;
+		box-shadow: none;
+		margin-right: 0;
+		padding: 20px 60px;
+	}
+	span, .wrapper-tech span {
+		left: 40px;
+		font-size: 40px;
+	}
+	.my-story .view-toggle h3 {
+		padding-right: 40px;
+		line-height: 1.5;
+	}
+	span.jedi {
+		left: 40px;
+		top: 195px;
+	}
+	.iheartart01 img,
+	.iheartart02 img {
+		max-width: 360px;
+	}
+	.paris01 img {
+		max-width: 480px;
+	}
+	.paris02 img,.paris03 img,
+	.uae01 img, .uae02 img,
+	.turkey01 img, .turkey02 img,
+	.waselart01 img, .waselart02 img,
+	.barcelona01 img, .barcelona02 img {
+		max-width: 240px;
+	}
+	.fourpics {
+		width: 50%;
+		padding: 0;
+	}
 	.quote p {
 		font-size: 29px;
 		font-style: normal;
@@ -1074,8 +1210,8 @@ i.fa.fa-envelope {
 	.greeting p {
 		width: 280px;
 		padding: 0px 8px 80px 8px;
-		line-height: 1.5;
-		font-size: 16px;
+		line-height: 1.8;
+		font-size: 14px;
 	}
 	p.credit-list {
 		font-size: 14px;
@@ -1083,6 +1219,13 @@ i.fa.fa-envelope {
 		position: absolute;
 		top: 100px;
 		padding-left: 20px;
+		padding-bottom: 0;
+	}
+	em {
+		display: none;
+	}
+	.fa-heart {
+		vertical-align: top;
 	}
 	a#email {
 		font-size: 18px;
