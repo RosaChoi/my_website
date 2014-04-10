@@ -288,6 +288,7 @@ nav.slide-trigger  {
 	margin: 0 auto;
 	position:relative;
 	display: none;
+	padding-top: 30px;
 }
 .view-toggle .client h3 {
 	color: #d7ddb9;
@@ -904,6 +905,9 @@ i.fa.fa-envelope {
 		padding-right: 0;
 		line-height: 2;
 	}
+	.wrapper-roots {
+	background: url(../img/asia768.jpg) center top no-repeat;
+	}
 	.twopics {
 		width: 655px;
 		padding-left: 57px;
@@ -1143,7 +1147,6 @@ i.fa.fa-envelope {
 	}
 	.rosa-desc {
 		float: none;
-		/*padding-bottom: 50px;*/
 		padding-right: 10px;
 		text-align: right;
 		box-shadow: inset -1px 0 0 rgba(120,109,95,.3);
@@ -1158,6 +1161,9 @@ i.fa.fa-envelope {
 		box-shadow: none;
 		margin-right: 0;
 		padding: 20px 60px;
+	}
+	.wrapper-roots {
+	background: url(../img/asia480.jpg) center top no-repeat;
 	}
 	span, .wrapper-tech span {
 		left: 40px;

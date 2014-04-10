@@ -37,10 +37,11 @@ function viewButtonClicked (event) {
 	$(this).hide();  //Hide the button that was just clicked
 	$(targetDiv).siblings('.container').hide();
 	$(targetId).slideDown('fast');  //Slide the current target id down.
+	var targetC = $(targetId).offset().top;
+	$('body,html').animate({scrollTop: targetC}, FAST_SCROLL);
 	$('#first-dot').trigger('click'); 
-	var targetY = $('.view-toggle').offset().top;
-	$('body,html').animate({scrollTop: targetY}, FAST_SCROLL);
 }
+
 
 $('.close-mark').click(closeMarkClicked);
 function closeMarkClicked (event) {
