@@ -83,30 +83,6 @@ function methodClicked (event) {
 	$(this).slideUp('fast');
 }
 
-//social icon toggle - twiter, github, linkedin
-// $('.fa-twitter-square').mouseenter(function() {
-// 	debugger
-// 	$(this).addClass('active')css({"color": "#55acef"});
-
-// });
-// $('#twitter').mouseleave(function() {
-// 	$('.toggle-soc .fa.fa-twitter-square').css({"color": "#e9e9e9"});
-// });
-
-// $('#github').mouseenter(function() {
-// 	$('.toggle-soc .fa.fa-github-square').css({"color": "black"});
-// });
-// $('#github').mouseleave(function() {
-// 	$('.toggle-soc .fa.fa-github-square').css({"color": "#e9e9e9"});
-// });
-// $('#linkedin').mouseenter(function() {
-// 	$('.toggle-soc .fa.fa-linkedin-square').addClass('active');
-// });
-// $('#linkedin').mouseleave(function() {
-// 	$('.toggle-soc .fa.fa-linkedin-square').css({"color": "#e9e9e9"});
-// });
-
-
 $('.site-credit').click(siteCreditClicked);
 function siteCreditClicked(evt) {
 	evt.preventDefault();
