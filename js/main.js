@@ -22,10 +22,16 @@ function myAnimate($targetY) {
 
 $('.nav-link').click(function() {
 	var targetClass = $(this).data('target');
+	console.log(targetClass);
 	var $targetY = $(targetClass);
 	myAnimate($targetY);
-})
+});
 
+$('.footer-work').click(function(){
+	var targetT = $('.work-sixtysix').offset().top;
+	console.log(targetT);
+	$('body,html').animate({scrollTop: targetT}, FAST_SCROLL);
+})
 
 //when view-button is clicked, content page will slidedown and slide up
 $('.view-button').click(viewButtonClicked);
@@ -40,10 +46,9 @@ function viewButtonClicked (event) {
 	var targetC = $(targetId).offset().top;
 	$('body,html').animate({scrollTop: targetC}, FAST_SCROLL);
 	$('#first-dot').trigger('click'); 
-}
+};
 
-
-$('.close-mark').click(closeMarkClicked);
+$('.returnto-main').click(closeMarkClicked);
 function closeMarkClicked (event) {
 	event.preventDefault();
 	var targetDiv = $(this).closest('.container')
@@ -53,7 +58,7 @@ function closeMarkClicked (event) {
 	$(targetDiv).siblings('.container').show();
 	var targetId = $(this).closest('.container')
 	var targetY = $(targetId).offset().top;
-	$('body,html').animate({scrollTop: targetY}, 900); 
+	$('body,html').animate({scrollTop: targetY}, {duration: 900, easing: 'swing'}); 
 }
 
 //painting carousel

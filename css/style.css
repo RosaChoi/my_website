@@ -147,9 +147,11 @@ h3 {
 	padding-left: 250px;
 }
 .buttons {
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 }
-.view-button {
+.view-button,
+.feedback .buttons a,
+.my-story .view-toggle .buttons a {
 	margin: 0 auto;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -163,6 +165,11 @@ h3 {
 	border-radius: 5px;
 	width: 8em;
 }
+.feedback .buttons a,
+.my-story .view-toggle .buttons a {
+	width: 13em;
+}
+
 /* toggle - page two*/
 .view-toggle {
 	position: relative;
@@ -242,13 +249,17 @@ nav.slide-trigger  {
 }
 .work-sixtysix .view-toggle .feedback {
 	background: #e3e3e3;
+
+}
+.feedback .buttons {
+	margin-left: 4px;
+	margin-top: 40px;
 }
 
 /* Site Page Three*/
 .work-unlikeness {
 	background: url(../img/Unlikeness.jpg) center top no-repeat;
 	width: 100%;
-	/*height: 1250px;*/
 	background-size: cover;
 }
 .work-unlikeness .entry-content h2 {
@@ -280,11 +291,15 @@ nav.slide-trigger  {
 	margin-bottom: 80px;
 }
 .work-unlikeness .buttons a.view-button {
-	background: #9e3d1e;
+	background: #852c04;
 }
 /* toggle - page three*/
+
+.work-unlikeness .feedback .buttons a.returnto-main {
+	background-color: #852c04;
+}
 .view-toggle {
-	max-width: 100%;
+	max-width: 100%; 
 	margin: 0 auto;
 	position:relative;
 	display: none;
@@ -358,13 +373,6 @@ img.profile {
 	padding: 0 0 30px 0;
 	margin-top: 20px;
 }
-a.close-mark {
-	color: rgba(0,0,0,.5);
-	font-size: 40px;
-	float: right;
-	margin: auto 0;
-	padding-right: 628px;
-}
 
 /* Site Page Four*/
 .work-timelocket {
@@ -395,6 +403,9 @@ a.close-mark {
 }
 .work-timelocket .buttons a.view-button {
 	background: #6f2808;
+}
+.work-timelocket .feedback .buttons a.returnto-main {
+	background-color: #6f2808;
 }
 /* toggle - page four*/
 .work-timelocket .view-toggle .client h3,
@@ -532,6 +543,10 @@ img.profile {
 	margin-top: 40px;
 	background: #b42b3d;
 }
+.my-story .view-toggle .buttons a {
+	background-color: #b42b3d
+}
+
 /* toggle - page six*/
 .my-story .view-toggle {
 background: white;
@@ -556,7 +571,6 @@ span.jedi {
 	text-decoration: line-through;
 	font-weight: normal;
 }
-
 .my-story .entry-content p.share{
 	color: #786d5f;
 	font-family: 'Helvetica Neue', sans-serif;
@@ -628,11 +642,6 @@ span.jedi {
 	height: 620px;
 	padding: 0;
 }
-/*.wrapper-turkey {
-	background: url(../img/turkey01.jpg) center top no-repeat;
-	height: 620px;
-	padding: 0;
-}*/
 .wrapper-art {
 	background: url(../img/iheartart.jpg) center top no-repeat;
 	height: 620px;
@@ -780,23 +789,37 @@ i.fa.fa-envelope {
 }
 
 /*footer*/
-.footer-nav nav{
+.footer-nav {
 	background: white;
+	padding: 0;
 	margin: 0;
 	height: 60px;
+	clear: both;
+	width: 100%;
 }
-.footer-nav nav ul {
+.footer-nav .top-nav {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
-.footer-nav nav ul li {
+.footer-nav .top-nav ul {
+	float: left;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 80px;
+}
+#copy-right {
 	list-style-type: none;
 	display: inline-block;
-	float: right;
-	font-size: 12px;
+	position: relative;
+	left: 620px;
+	font-size: 14px;
 	color: #333;
-	padding-right: 60px;
-	padding-top: 10px;
+	text-align: right;	
+	padding-left: 0;
+	margin-right: 0;
 }
 .footer-nav nav ul li a {
 	text-decoration: none;
@@ -805,7 +828,6 @@ i.fa.fa-envelope {
 .footer-nav nav ul li a:hover {
 	color: #37aa12;
 }
-
 @media screen and (max-width: 768px) {
 	body{
 		max-width: 768px;
@@ -853,10 +875,6 @@ i.fa.fa-envelope {
 		padding-right: 80px;
 		padding-bottom: 20px;
 		font-size: 14px;
-	}
-	a.close-mark {
-		padding-right: 362px;
-		font-size: 50px;
 	}
 	.work-unlikeness .the-final img {
 		width: 650px;
@@ -966,6 +984,9 @@ i.fa.fa-envelope {
 		left: 550px;
 		top: 580px;
 	}
+	#copy-right {
+		left: 180px;
+	}
 }
 @media screen and (max-width: 480px) {
 	body, html{
@@ -1037,11 +1058,17 @@ i.fa.fa-envelope {
 		max-width: 380px;
 		padding-left: 2.8em;
 	}
-	.view-button {
+	.view-button,
+	.feedback .buttons a,
+	.my-story .view-toggle .buttons a {
 		padding: 14px;
-		width: 12em;
+		width: 13em;
 		box-shadow: none;
 		border-radius: 0;
+	}
+	.feedback .buttons a,
+	.my-story .view-toggle .buttons a{
+		margin: 0 96px;
 	}
 	.buttons {
 		padding-bottom: 80px;
@@ -1084,10 +1111,6 @@ i.fa.fa-envelope {
 		padding-right: 60px;
 		padding-bottom: 20px;
 		font-size: 16px;
-	}
-	a.close-mark {
-		padding-right: 219px;
-		font-size: 60px;
 	}
 	.cover-image, .cover-image img{
 		width: 350px;
@@ -1259,6 +1282,9 @@ i.fa.fa-envelope {
 	}
 	.footer-nav nav ul li {
 		font-size: 16px;
+	}
+	#copy-right {
+		left: 160px;
 	}
 }
 
