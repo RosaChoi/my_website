@@ -45,7 +45,9 @@ function viewButtonClicked (event) {
 	$(targetId).slideDown('fast');  //Slide the current target id down.
 	var targetC = $(targetId).offset().top;
 	$('body,html').animate({scrollTop: targetC}, FAST_SCROLL);
-	$('#first-dot').trigger('click'); 
+	$('#first-dot').trigger('click');
+	$('.end-page ul').hide();
+	$('.black').show();
 };
 
 $('.returnto-main').click(closeMarkClicked);
