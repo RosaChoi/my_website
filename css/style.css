@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
 	color: #333;
 }
 p {
@@ -71,7 +71,8 @@ h1.slogan {
 .top-nav ul li a{
 	color: white;
 }
-.top-nav ul li a:hover {
+.top-nav ul li a:hover,
+ .top-nav ul li a:focus {
 	color: #333;
 }
 .slidedown {
@@ -99,7 +100,8 @@ h1.slogan {
 	font-size: 12px;
 	color: white;
 }
-.slidedown nav ul li a:hover {
+.slidedown nav ul li a:hover,
+.slidedown nav ul li a:focus {
 	color: #f9c87a;
 }
 .mobile-dropdown,
@@ -195,7 +197,8 @@ h3 {
 .work-sixtysix .view-toggle .client a {
 	padding-bottom: 60px;
 }
-.work-sixtysix .view-toggle .client a:hover {
+.work-sixtysix .view-toggle .client a:hover,
+.work-sixtysix .view-toggle .client a:focus {
 	color: #00b495;
 }
 .paintings-slide {
@@ -231,7 +234,8 @@ nav.slide-trigger  {
 	font-weight: lighter;
 	font-size: 14px;
 }
-.slide-trigger a:hover {
+.slide-trigger a:hover,
+.slide-trigger a:focus {
 	color: #00b495;
 }
 #paintings-slide-c {
@@ -334,7 +338,8 @@ nav.slide-trigger  {
 	font-size: 14px;
 	line-height: 1.5;
 }
-.client a:hover {
+.client a:hover,
+.client a:focus {
 	color: #852c04;
 }
 .view-toggle .the-final {
@@ -581,7 +586,8 @@ span.jedi {
 	color: #ccc;
 	padding: 0 10px;
 }
-.fa-twitter:hover {
+.fa-twitter:hover,
+.fa-twitter:focus {
 	color: black;
 }
 .share02 img {
@@ -743,7 +749,8 @@ a.return {
 	font-size: 16px;
 	color: white;
 }
-p.credit-list a:hover {
+p.credit-list a:hover,
+p.credit-list a:focus {
 	color: #37aa12;
 }
 .toggle-soc {
@@ -768,13 +775,16 @@ i.fa.fa-envelope {
 	left: 740px;
 	top: 550px;
 }
-.fa-twitter-square:hover {
+.fa-twitter-square:hover,
+.fa-twitter-square:focus {
 	color: #55acef;
 }
-.fa-github-square:hover {
+.fa-github-square:hover,
+.fa-github-square:focus {
 	color: #000;
 }
-.fa-linkedin-square:hover {
+.fa-linkedin-square:hover,
+.fa-linkedin-square:focus {
 	color: #276eac;
 }
 #github {
@@ -832,10 +842,13 @@ i.fa.fa-envelope {
 	color: #333;
 }
 .footer-nav nav ul li a:hover,
-#copy-right a:hover {
+.footer-nav nav ul li a:focus,
+#copy-right a:hover,
+#copy-right a:focus {
 	color: #37aa12;
 }
-.footer-nav .end-page a img:hover {
+.footer-nav .end-page a img:hover,
+.footer-nav .end-page a img:focus {
 	content: url(../img/logo-icon.png) center top no-repeat;
 
 }
@@ -1058,7 +1071,8 @@ i.fa.fa-envelope {
 	.mobile-dropdown ul li a {
 		color: white;
 	}
-	.mobile-dropdown ul li a:hover{
+	.mobile-dropdown ul li a:hover, 
+	.mobile-dropdown ul li a:focus {
 		color: #f9c87a;
 	}
 	.mobile-dropdown ul li.work-list {
